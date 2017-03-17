@@ -4,9 +4,9 @@ public class User {
 		private PersonalDetail personalDetail;
 		private PermanentAddress permanentAddress;
 		private CorrespondenceAddress correspondenceAddress;
-		
-		
-		
+		/**
+		 * @return the personalDetail
+		 */
 		public PersonalDetail getPersonalDetail() {
 			return personalDetail;
 		}
