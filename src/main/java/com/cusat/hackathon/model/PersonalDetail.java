@@ -14,15 +14,11 @@ public class PersonalDetail {
 	public String getName() {
 		return name;
 	}
-	/**
-	 * @param name the name to set
-	 */
+	
 	public void setName(String name) {
 		this.name = name;
 	}
-	/**
-	 * @return the fatherName
-	 */
+	
 	public String getFatherName() {
 		return fatherName;
 	}
