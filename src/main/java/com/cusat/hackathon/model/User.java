@@ -34,9 +34,7 @@ public class User {
 		public CorrespondenceAddress getCorrespondenceAddress() {
 			return correspondenceAddress;
 		}
-		/**
-		 * @param correspondenceAddress the correspondenceAddress to set
-		 */
+		
 		public void setCorrespondenceAddress(CorrespondenceAddress correspondenceAddress) {
 			this.correspondenceAddress = correspondenceAddress;
 		}
