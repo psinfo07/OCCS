@@ -10,9 +10,7 @@ public class PersonalDetail {
 	private String mobileNo;
 	private String password;
 	private Timestamp lastUpdateTs;
-	/**
-	 * @return the name
-	 */
+	
 	public String getName() {
 		return name;
 	}
