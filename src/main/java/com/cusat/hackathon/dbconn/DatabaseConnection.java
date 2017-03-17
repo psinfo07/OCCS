@@ -19,7 +19,7 @@ public class DatabaseConnection {
 	}
 	public static Connection getConnectivity(){
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "admin", "system");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ocsproject", "admin", "system");
 			System.out.println("connection successful"); 
 		} catch (SQLException e) {
 			System.out.println("ERROR: Unable to Connect to Database.");
@@ -33,6 +33,9 @@ public class DatabaseConnection {
 		}catch(SQLException e){
 			System.out.println("Connection not closed "+ e);
 		}
+		
+	}
+	public static void main(String args[]){
 		
 	}
 }
