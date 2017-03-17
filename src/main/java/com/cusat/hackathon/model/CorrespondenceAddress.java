@@ -9,9 +9,7 @@ public class CorrespondenceAddress {
 		private String dist;
 		private String state;
 		private String pin;
-		/**
-		 * @return the userId
-		 */
+		
 		public String getUserId() {
 			return userId;
 		}
