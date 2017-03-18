@@ -7,13 +7,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.cusat.hackathon.model.PersonalDetail;
 import com.cusat.hackathon.model.User;
 import com.cusat.hackathon.services.UserService;
 import com.cusat.hackathon.services.UserServiceImpl;
-
 /**
- * Servlet implementation class UserAction
+ * 
+ * @author BHASKAR
+ *
  */
+
 public class UserAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -22,11 +25,18 @@ public class UserAction extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			UserService userService = new UserServiceImpl();
-			 
-			boolean flag =userService.createUser(new User());
+			 User user=new User();
+			 PersonalDetail personalDetail=new PersonalDetail();
+			 String name = request.getParameter("Name");
+			 String pass = request.getParameter("Password");
+			 personalDetail.setName("Hello "+name);
+			 user.setPersonalDetail(personalDetail);;
+			boolean flag =userService.createUser(user);
 			
 			if(flag){
-				response.sendRedirect("success.jsp"); 
+				request.setAttribute("user", user);
+				request.getRequestDispatcher("success.jsp").forward(request, response);
+				//response.sendRedirect("success.jsp?user="+user); 
 			}
 	
 	}
