@@ -24,7 +24,9 @@ public class UserAction extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			UserService userService = new UserServiceImpl();
+			
+		
+		UserService userService = new UserServiceImpl();
 			 User user=new User();
 			 PersonalDetail personalDetail=new PersonalDetail();
 			 String name = request.getParameter("Name");

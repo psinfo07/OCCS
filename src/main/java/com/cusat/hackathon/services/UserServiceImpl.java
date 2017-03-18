@@ -11,4 +11,12 @@ public class UserServiceImpl implements UserService {
 		return userDao.createUser(user);
 	}
 
+	public User userProfile(User user) {
+		User u=userDao.userProfile(user);
+		if(null==user){
+			u.getPersonalDetail().setValid(0);
+		}
+		return u;
+	}
+
 }

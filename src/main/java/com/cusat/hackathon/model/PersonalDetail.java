@@ -10,7 +10,7 @@ public class PersonalDetail {
 	private String mobileNo;
 	private String password;
 	private Timestamp lastUpdateTs;
-	
+	private int valid;  
 	public String getName() {
 		return name;
 	}
@@ -87,6 +87,20 @@ public class PersonalDetail {
 	 */
 	public void setLastUpdateTs(Timestamp lastUpdateTs) {
 		this.lastUpdateTs = lastUpdateTs;
+	}
+
+	/**
+	 * @return the valid
+	 */
+	public int isValid() {
+		return valid;
+	}
+
+	/**
+	 * @param valid the valid to set
+	 */
+	public void setValid(int valid) {
+		this.valid = valid;
 	}
 
 }
