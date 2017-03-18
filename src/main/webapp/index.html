@@ -754,27 +754,44 @@
 					</h4>
 				</div>
 				<div class="modal-body" style="color:green">          		  
-					<form>
+					<form action="create_user" method="post">
 						<div class="form-group">
 							<label for="name">Name:</label>
-							<input type="text" class="form-control" id="name" placeholder="Enter Name">
+							<input type="text" class="form-control" name="name" id="name" maxlength="30" placeholder="Enter Name">
 						</div>
 						<div class="form-group">
 							<label for="email">Email:</label>
-							<input type="email" class="form-control" id="email" placeholder="Enter email">
+							<input type="email" class="form-control" name="email" id="email" maxlength="30" placeholder="Enter email">
 						</div>
 						<div class="form-group">
 							<label for="pwd">Password:</label>
-							<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+							<input type="password" class="form-control" name="password" id="pwd" maxlength="15" placeholder="Enter password">
 						</div>
 						<div class="form-group">
-							<label for="pwd">Higher Education:</label>
-							<input type="text" class="form-control" id="hEducation" placeholder="Enter Higher Education">
+							<label for="cpwd">Confirm Password:</label>
+							<input type="password" class="form-control" name="cpassword" id="cpwd" maxlength="15" placeholder="Confirm password">
+						</div>
+						<div class="form-group">
+						<label for="edubox">Select Highest Education:</label>
+							<select name="qualification" class="form-control">
+							<option value="INVAL">-- Highest Qualification -- </option>
+							<option value="catid01"> Working Professional </option>
+							<option value="catid02"> Post Graduate </option>
+							<option value="catid03"> Graduate/Diploma </option>
+							<option value="catid04"> XIIth Grade </option>
+							<option value="catid05"> Xth Grade </option>
+							<option value="catid06"> Other </option>
+							<option value="catid07"> Cirtification1 </option>
+							<option value="catid08"> Cirtification2  </option>
+							<option value="catid09"> Cirtification3  </option>
+							<option value="catid10"> Cirtification4  </option>
+							</select>
+							<!-- <input type="text" class="form-control" id="hEducation" placeholder="Enter Higher Education"> -->
 						</div>
 						<!--div class="checkbox">
 							<label><input type="checkbox"> Remember me</label>
 						</div-->
-						<button type="submit" class="btn btn-default">SignUp</button>
+						<button type="submit" class="btn btn-default">Register</button>
 					</form>	  
 				</div>
 				<div class="modal-footer"></div>

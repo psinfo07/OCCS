@@ -2,6 +2,10 @@
 <web-app>
   
 	<display-name>career_therapy</display-name>
+	<servlet-mapping>
+		<servlet-name>CreateUser</servlet-name>
+		<url-pattern>/create_user</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
@@ -13,8 +17,12 @@
   	<description></description>
   	<servlet-class>com.cusat.hackathon.servlets.UserAction</servlet-class>
   </servlet>
-  <servlet-mapping>
-  	<servlet-name>UserAction</servlet-name>
-  	<url-pattern>/users</url-pattern>
-  </servlet-mapping>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>CreateUser</display-name>
+  	<servlet-name>CreateUser</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.CreateUser</servlet-class>
+  </servlet>
+
 </web-app>

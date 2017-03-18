@@ -11,6 +11,7 @@ public class PersonalDetail {
 	private String password;
 	private Timestamp lastUpdateTs;
 	private int valid;  
+	private String hqualification;
 	public String getName() {
 		return name;
 	}
@@ -101,6 +102,14 @@ public class PersonalDetail {
 	 */
 	public void setValid(int valid) {
 		this.valid = valid;
+	}
+
+	public String getHqualification() {
+		return hqualification;
+	}
+
+	public void setHqualification(String hqualification) {
+		this.hqualification = hqualification;
 	}
 
 }

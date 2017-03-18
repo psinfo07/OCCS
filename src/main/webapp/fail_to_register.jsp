@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-		<h1>Success</h1>
+		<h1>Login Failed</h1>
 	<%--  <b><c:out value="${qualification}" /></b> --%>
 	 
 </body>
