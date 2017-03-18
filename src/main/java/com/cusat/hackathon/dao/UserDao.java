@@ -1,5 +1,12 @@
 package com.cusat.hackathon.dao;
 
-public class UserDao {
+import com.cusat.hackathon.model.User;
 
+public class UserDao {
+	public boolean createUser(User user){
+		
+		
+		return true;
+		
+	}
 }
