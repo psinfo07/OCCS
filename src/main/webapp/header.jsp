@@ -36,18 +36,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo1.png" alt="" width="199" height="52" /></a>
+                    <a class="navbar-brand" href="index.jsp"><img src="img/logo1.png" alt="" width="199" height="52" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li class="dropdown active">
-							<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Home <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="template.jsp">Home slider 1</a></li>
-                                <!-- <li><a href="index2.html">Home slider 2</a></li> -->
-								
-                            </ul>				
-						<!-- nothing -->
+							<a href="index.jsp" class="dropdown-toggle "  data-delay="0" data-close-others="false">Home </i></a>
 						</li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Features <i class="fa fa-angle-down"></i></a>

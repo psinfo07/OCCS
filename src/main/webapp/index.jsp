@@ -19,29 +19,16 @@
         <div id="main-slider" class="main-slider flexslider">
             <ul class="slides">
               <li>
-                <img src="img/slides/flexslider/1.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Modern Design</h3> 
-					<p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
+                <img src="img/slides/flexslider/career33.jpg" alt="" />
+                
               </li>
               <li>
-                <img src="img/slides/flexslider/2.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Fully Responsive</h3> 
-					<p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
+                <img src="img/slides/flexslider/career22.jpg" alt="" />
+                
               </li>
               <li>
-                <img src="img/slides/flexslider/3.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Clean & Fast</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
+              	<img src="img/slides/flexslider/career11.jpg" alt="" />
+              </li>	
             </ul>
         </div>
 	<!-- end slider -->
@@ -62,7 +49,7 @@
 							</div>
 							<div class="col-lg-4">
 								<div class="cta-btn">
-									<a href="#" class="btn btn-theme btn-lg">Grab it now <i class="fa fa-angle-right"></i></a>
+									<a href="#" data-toggle="modal" data-target="#signUp" class="btn btn-theme btn-lg">Register Now <i class="fa fa-angle-right"></i></a>
 								</div>
 							</div>	
 		</div>
@@ -156,28 +143,15 @@
 						</p>
 					</div>
 					<div class="col-sm-6 col-lg-6">
-						<h4>Projects</h4>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-							40% Complete (success)
-						  </div>
-						</div>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-							20% Complete
-						  </div>
-						</div>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-							60% Complete (warning)
-						  </div>
-						</div>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-							80% Complete
-						  </div>
-						</div>
-					</div>
+						<h4>WHAT IS A PSYCHOMETRIC CAREER ASSESSMENT?</h4>
+							<p>Psychometric assessments or career tests, as referred commonly, are standard scientific tests used to measure individual's mental capabilities, cognitive abilities & behavioral style.
+
+These tests are designed to measure your affinity for a course, stream or role based on the required personality characteristics and aptitude for the same.
+
+These Psychometric Career Assessments are designed specially to answer to your career related questions.
+
+There are no wrong answers to any of the questionnaire.</p>
+					</div> 
 				</div>
 			</div>
 		</div>
@@ -193,50 +167,6 @@
 		</div>
 		</div>
 		<!-- end divider -->
-		
-	<!-- parallax  -->
-	<div id="parallax1" class="parallax text-light text-center marginbot50" data-stellar-background-ratio="0.5">	
-           <div class="container">
-				<div class="row appear stats">
-					<div class="col-xs-6 col-sm-3 col-md-3">
-						<div class="align-center color-white txt-shadow">
-							<div class="icon">
-								<i class="fa fa-clock-o fa-5x"></i>
-							</div>
-						<strong id="counter-coffee" class="number">1232</strong><br />
-						<span class="text">Minutes</span>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-md-3">
-						<div class="align-center color-white txt-shadow">
-							<div class="icon">
-								<i class="fa fa-music fa-5x"></i>
-							</div>
-						<strong id="counter-music" class="number">345</strong><br />
-						<span class="text">MP3 Songs</span>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-md-3">
-						<div class="align-center color-white txt-shadow">
-							<div class="icon">
-								<i class="fa fa-coffee fa-5x"></i>
-							</div>
-						<strong id="counter-clock" class="number">501</strong><br />
-						<span class="text">Coffee Cups</span>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-md-3">
-						<div class="align-center color-white txt-shadow">
-							<div class="icon">
-								<i class="fa fa-trophy fa-5x"></i>
-							</div>
-						<strong id="counter-heart" class="number">378</strong><br />
-						<span class="text">Awwards</span>
-						</div>
-					</div>
-				</div>
-            </div>
-	</div>	 
 	
 		<div class="container">
 		<div class="row">
@@ -249,12 +179,12 @@
 								<li><blockquote>
 								Usu ei porro deleniti similique, per no consetetur necessitatibus. Ut sed augue docendi alienum, ex oblique scaevola inciderint pri, unum movet cu cum. Et cum impedit epicuri
 									</blockquote>
-									<h4>Daniel Dan <span>&#8213; MA System</span></h4> 
+									<h4>KESHAV SINGH <span>&#8213; Software Engineer</span></h4> 
 								</li>
 								<li><blockquote>
 								Usu ei porro deleniti similique, per no consetetur necessitatibus. Ut sed augue docendi alienum, ex oblique scaevola inciderint pri, unum movet cu cum. Et cum impedit epicuri 
 									</blockquote>
-									<h4>Mark Wellbeck <span>&#8213; AC Software </span></h4>
+									<h4> ALOK GUPTA <span>&#8213; Software Engineer</span></h4>
 								</li>	
 							</ul>
 						</div>					
@@ -267,7 +197,7 @@
 						</ul>
 						<div class="tab-content">
 							<div class="tab-pane active" id="one">
-								<p><img src="img/dummy1.jpg" class="pull-left" alt="" />
+								<p><img src="img/career1.jpg" class="pull-left" alt="" />
 									<strong>Augue iriure</strong> dolorum per ex, ne iisque ornatus veritus duo. Ex nobis integre lucilius sit, pri ea falli ludus appareat. Eum quodsi fuisset id, nostro patrioque qui id. Nominati eloquentiam in mea.
 								</p>
 								<p>
@@ -275,14 +205,14 @@
 								</p>
 							</div>
 							<div class="tab-pane" id="two">
-								<p><img src="img/dummy1.jpg" class="pull-right" alt="" />
-									 Tale dolor mea ex, te enim assum suscipit cum, vix aliquid omittantur in. Duo eu cibo dolorum menandri, nam sumo dicit admodum ei. Ne mazim commune honestatis cum, mentitum phaedrum sit et.
+								<p><img src="img/career2.jpg" class="pull-right" alt="" />
+									 <strong>Tale dolor</strong> mea ex, te enim assum suscipit cum, vix aliquid omittantur in. Duo eu cibo dolorum menandri, nam sumo dicit admodum ei. Ne mazim commune honestatis cum, mentitum phaedrum sit et.
 								</p>
 								<p>Lorem ipsum dolor sit amet, vel laoreet pertinacia at, nam ea ornatus ocurreret gubergren. Per facete graecis eu.</p>
 							</div>
 							<div class="tab-pane" id="three">
-								<p>Lorem ipsum dolor sit amet, vel laoreet pertinacia at, nam ea ornatus ocurreret gubergren. Per facete graecis eu. </p>
-								<p>
+								<p><strong>Lorem ipsum</strong> dolor sit amet, vel laoreet pertinacia at, nam ea ornatus ocurreret gubergren. Per facete graecis eu. </p>
+								<p><img src="img/career3.jpg" class="pull-right" alt="" />
 									 Cu cum commodo regione definiebas. Cum ea eros laboramus, audire deseruisse his at, munere aeterno ut quo. Et ius doming causae philosophia, vitae bonorum intellegat usu cu.
 								</p>
 							</div>
@@ -305,7 +235,7 @@
 		<!-- end divider -->
 	
 		<!-- Portfolio Projects -->
-		<div class="container marginbot50">
+		<%-- <div class="container marginbot50">
 		<div class="row">
 			<div class="col-lg-12">
 				<h4 class="heading">Recent Works</h4>
@@ -462,7 +392,7 @@
 					<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
 				</div>
 
-			</div>
+			</div> --%>
 		</div>
 		</div>
 		
