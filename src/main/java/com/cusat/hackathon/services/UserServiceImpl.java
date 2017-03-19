@@ -19,4 +19,13 @@ public class UserServiceImpl implements UserService {
 		return u;
 	}
 
+	public User userLogin(User user) {
+		User u=null;
+		boolean isValid= userDao.userLogin(user);
+		if(isValid){
+			u=userProfile(user);
+		}
+		return u;
+	}
+
 }
