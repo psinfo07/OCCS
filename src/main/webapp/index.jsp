@@ -139,7 +139,7 @@
 			</div>
 		</div>
 		</div>
-		<!-- end divider -->
+		<!-- end divider here-->
 		
 		<div class="container">
 		<div class="row">

@@ -13,7 +13,7 @@
 <link href="css/cubeportfolio.min.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 
-<!-- Theme skin -->
+<!-- Theme skin. -->
 <link id="t-colors" href="skins/default.css" rel="stylesheet" />
 
 	<!-- boxed bgi -->

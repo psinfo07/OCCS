@@ -47,7 +47,7 @@
                                 <!-- <li><a href="index2.html">Home slider 2</a></li> -->
 								
                             </ul>				
-						
+						<!-- nothing -->
 						</li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Features <i class="fa fa-angle-down"></i></a>
@@ -85,3 +85,4 @@
             </div>
         </div>
 	</header>
+	

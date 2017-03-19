@@ -83,7 +83,7 @@
 		</div>
 	</div>
 	</footer>
-	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- Placed at the end of the document so the pages load faster. -->
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
