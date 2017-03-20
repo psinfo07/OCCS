@@ -1,6 +1,7 @@
 package com.cusat.hackathon.dbconn;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,9 +12,14 @@ public class DatabaseConnection {
 	
 	private static Connection con = null;
 	
+		
 	static {
 		try{
-			properties.load(new FileInputStream("db.properties"));
+			ClassLoader loader = Thread.currentThread().getContextClassLoader();
+			InputStream resourceStream = loader.getResourceAsStream("db.properties") ;
+			properties.load(resourceStream);
+			
+			
 			Class.forName(properties.getProperty("DB_DRIVER_CLASS"));
 			System.out.println("Driver loaded");
 		} catch (Exception e){
@@ -39,7 +45,7 @@ public class DatabaseConnection {
 		}
 		
 	}
-	/*public static void main(String args[]){
+	public static void main(String args[]){
 		getConnectivity();
-	}*/
+	}
 }

@@ -47,9 +47,9 @@ public class UserDao {
 	     		+ " pa.userid as pa_userId,pa.addressline1,pa.addressline2,pa.city,pa.dist,pa.state,pa.pin,"
 	     		+ " ca.userid as ca_userId,ca.addressline1 as ca_add1,ca.addressline2 as ca_add2,ca.city as ca_city,ca.dist as ca_dist,ca.state as ca_state,ca.pin as ca_pin "
 	     		+ " FROM personal_details pd,p_address pa,c_address ca "
-	     		+ " WHERE pd.email_id=ca.userid "
-	     		+ " AND pd.email_id=pa.userid"
-	     		+ " AND pd.email_id = ? and pd.password = ? and pd.valid=?";
+	     		/*+ " WHERE pd.email_id=ca.userid "
+	     		+ " AND pd.email_id=pa.userid"*/
+	     		+ " WHERE pd.email_id = ? and pd.password = ? and pd.valid=?";
 	     try {
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setString(1, user.getPersonalDetail().getEmailId());
