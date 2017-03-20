@@ -62,78 +62,6 @@
 		</div>
 	</div>
 	</section>
-	
-	<section id="content">
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="text-center">
-					<h2>We use <span class="highlight">modern</span> infrastructure & technology</h2>					
-					<p>Lorem ipsum dolor sit amet, ne duis posse mei, ut cum vero nominati. Sed graece aeterno consectetuer te. Cu duo tota deleniti, vis ea fuisset nostrum. Meliore inciderint qui ne. Suas cotidieque vel ut  ei eros perpetua qui. Ponderum lobortis reformidans</p>
-				</div>
-			</div>		
-		</div>
-		</div>
-		
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="row">
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="box">
-							<div class="aligncenter">								
-								<div class="icon">
-								<i class="fa fa-desktop fa-5x"></i>
-								</div>
-								<h4>Fully responsive</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="box">
-							<div class="aligncenter">								
-								<div class="icon">
-								<i class="fa fa-file-code-o fa-5x"></i>
-								</div>
-								<h4>Fully responsive</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="box">
-							<div class="aligncenter">								
-								<div class="icon">
-								<i class="fa fa-paper-plane-o fa-5x"></i>
-								</div>
-								<h4>Fully responsive</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<div class="box">
-							<div class="aligncenter">								
-								<div class="icon">
-								<i class="fa fa-cubes fa-5x"></i>
-								</div>
-								<h4>Fully responsive</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		
-		<!-- divider -->
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="solidline">
-				</div>
-			</div>
-		</div>
-		</div>
-		<!-- end divider here-->
 		
 		<div class="container">
 		<div class="row">
@@ -165,14 +93,14 @@ There are no wrong answers to any of the questionnaire.</p>
 		</div>
 		
 		<!-- divider -->
-		<div class="container">
+	<!-- 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="blankline">
 				</div>
 			</div>
 		</div>
-		</div>
+		</div> -->
 		<!-- end divider -->
 	
 		<div class="container">
@@ -419,36 +347,36 @@ There are no wrong answers to any of the questionnaire.</p>
 		<div class="container">
 				<div class="row">
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://www.aicte-india.org/">
+									<a href="http://www.aicte-india.org/"  target="_blank">
 									<img alt="logo" src="img/clients/1.png" class="img-responsive" />
 									</a>
 								</div>											
 													
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://www.i4c.co.in/">
+									<a href="http://www.i4c.co.in/"  target="_blank">
 									<img alt="logo" src="img/clients/2.png" class="img-responsive" />
 									</a>
 								</div>											
 													
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="https://www.persistent.com/">
+									<a href="https://www.persistent.com/"  target="_blank">
 									<img alt="logo" src="img/clients/3.png" class="img-responsive" />
 									</a>
 								</div>											
 													
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://www.nic.in/">
+									<a href="http://www.nic.in/"  target="_blank">
 									<img alt="logo" src="img/clients/4.png" class="img-responsive" />
 									</a>
 								</div>									
 								
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="https://www.mygov.in/">
+									<a href="https://www.mygov.in/"  target="_blank">
 									<img alt="logo" src="img/clients/5.png" class="img-responsive" />
 									</a>
 								</div>									
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://mhrd.gov.in/">
+									<a href="http://mhrd.gov.in/"  target="_blank">
 									<img alt="logo" src="img/clients/6.png" class="img-responsive" />
 									</a>
 								</div>	

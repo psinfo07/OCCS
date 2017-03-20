@@ -67,13 +67,13 @@
                         <li><a href="portfolio.html">PROFILE</a></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">INSTITUTES <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
-                                <li><a href="https://www.careerguide.com/institutes/engineering-colleges-of-india">ENGINEERING COLLEGES</a></li>
-                                <li><a href="https://www.careerguide.com/institutes/b-schools-of-india">BUSSINESS COLLEGES</a></li>
-								<li><a href="https://www.careerguide.com/institutes/medical-colleges-of-india">MEDICAL COLLEGES</a></li>
-								<li><a href="https://www.careerguide.com/institutes/law-colleges-of-india">LAW COLLEGES</a></li>
+                                <li><a href="https://www.careerguide.com/institutes/engineering-colleges-of-india"  target="_blank">ENGINEERING COLLEGES</a></li>
+                                <li><a href="https://www.careerguide.com/institutes/b-schools-of-india"  target="_blank">BUSSINESS COLLEGES</a></li>
+								<li><a href="https://www.careerguide.com/institutes/medical-colleges-of-india"  target="_blank">MEDICAL COLLEGES</a></li>
+								<li><a href="https://www.careerguide.com/institutes/law-colleges-of-india"  target="_blank">LAW COLLEGES</a></li>
                             </ul>
 						</li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.jsp">Contact</a></li>
                     </ul>
                 </div>
             </div>

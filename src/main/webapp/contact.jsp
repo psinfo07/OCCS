@@ -175,11 +175,11 @@
 				<div class="widget">
 					<h4>Information</h4>
 					<ul class="link-list">
-						<li><a href="#">Press release</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Career center</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="news.jsp">News</a></li>
+						<li><a href="terms_&_conditions.jsp">Terms and conditions</a></li>
+						<li><a href="privacy_policy.jsp">Privacy policy</a></li>
+						<li><a href="blog.jsp">Blog</a></li>
+						<li><a href="contact.jsp">Contact us</a></li>
 					</ul>
 				</div>
 				
@@ -188,11 +188,11 @@
 				<div class="widget">
 					<h4>Pages</h4>
 					<ul class="link-list">
-						<li><a href="#">Press release</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Career center</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Knowledge Base</a></li>
+						<li><a href="#">Our Experts</a></li>
+						<li><a href="#">Partners</a></li>
+						<li><a href="#">Sitemap</a></li>
+						<li><a href="#">Pricing</a></li>
 					</ul>
 				</div>
 			</div>
@@ -215,7 +215,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="copyright">
-						<p>&copy; Sailor Theme - All Right Reserved</p>
+						<p>&copy; ONLINE_CAREER_COUNSELING Theme - All Right Reserved</p>
                         <div class="credits">
                             <!-- 
                                 All the links in the footer should remain intact. 
@@ -223,7 +223,7 @@
                                 Licensing information: https://bootstrapmade.com/license/
                                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Sailor
                             -->
-                            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                             <a href="http://dca.cusat.ac.in/"  target="_blank">Developed by the team <b>DCA CUSAT 6</b></a>
                         </div>
 					</div>
 				</div>
