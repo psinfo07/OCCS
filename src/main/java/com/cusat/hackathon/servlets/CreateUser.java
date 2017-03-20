@@ -43,8 +43,10 @@ public class CreateUser extends HttpServlet {
 			 response.sendRedirect("success.jsp");
 		 }
 		 else {
-			 response.sendRedirect("index.html");
+			 request.setAttribute("key", "User already exists !!!"); 
+				request.getRequestDispatcher("index.jsp").forward(request, response);
 		 }
+		 
 	}
 
 }

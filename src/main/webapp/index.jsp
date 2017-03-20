@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	<jsp:include page="css_part.jsp" />
 <body>
 
@@ -15,6 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
+			<b><c:out value="${key}" /></b>
 	<!-- Slider -->
         <div id="main-slider" class="main-slider flexslider">
             <ul class="slides">
