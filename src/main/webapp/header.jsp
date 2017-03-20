@@ -64,13 +64,13 @@
 								</li>
                             </ul>
                         </li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Blog <i class="fa fa-angle-down"></i></a>
+                        <li><a href="portfolio.html">PROFILE</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">INSTITUTES <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
-                                <li><a href="blog-rightsidebar.html">Blog right sidebar</a></li>
-                                <li><a href="blog-leftsidebar.html">Blog left sidebar</a></li>
-								<li><a href="post-rightsidebar.html">Post right sidebar</a></li>
-								<li><a href="post-leftsidebar.html">Post left sidebar</a></li>
+                                <li><a href="https://www.careerguide.com/institutes/engineering-colleges-of-india">ENGINEERING COLLEGES</a></li>
+                                <li><a href="https://www.careerguide.com/institutes/b-schools-of-india">BUSSINESS COLLEGES</a></li>
+								<li><a href="https://www.careerguide.com/institutes/medical-colleges-of-india">MEDICAL COLLEGES</a></li>
+								<li><a href="https://www.careerguide.com/institutes/law-colleges-of-india">LAW COLLEGES</a></li>
                             </ul>
 						</li>
                         <li><a href="contact.html">Contact</a></li>

@@ -43,8 +43,15 @@
 		<div class="row">
 							<div class="col-lg-8">
 								<div class="cta-text">
-									<h2>Awesome site template <span>corporate</span> business</h2>
-									<p> Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum</p>
+									<h2>WHAT <span>CAREER</span> SHOULD I CHOOSE ?</h2>
+									<p><b>* </b>Which career stream should I choose ?</p>
+									<p><b>* </b>What to do after 10th or 12th ?</p>
+									<p><b>* </b>There are so many options which is right for me ?</p>
+									<p><b>* </b>Should I follow my family legacy ?</p>
+									<p><b>* </b>Am I a right fit to pursue science or should I choose commerce or arts ?</p>
+									<p><b>* </b>Do I have what it takes to be ...........?</p>
+									<p><b>* </b>Should I follow the advices of my relatives or friends ?</p>
+									<p><b>* </b>Is ........... the only professions in the world ?</p>
 								</div>
 							</div>
 							<div class="col-lg-4">
@@ -412,26 +419,38 @@ There are no wrong answers to any of the questionnaire.</p>
 		<div class="container">
 				<div class="row">
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<img alt="logo" src="img/clients/logo1.png" class="img-responsive" />
+									<a href="http://www.aicte-india.org/">
+									<img alt="logo" src="img/clients/1.png" class="img-responsive" />
+									</a>
 								</div>											
 													
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<img alt="logo" src="img/clients/logo2.png" class="img-responsive" />
+									<a href="http://www.i4c.co.in/">
+									<img alt="logo" src="img/clients/2.png" class="img-responsive" />
+									</a>
 								</div>											
 													
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<img alt="logo" src="img/clients/logo3.png" class="img-responsive" />
+									<a href="https://www.persistent.com/">
+									<img alt="logo" src="img/clients/3.png" class="img-responsive" />
+									</a>
 								</div>											
 													
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<img alt="logo" src="img/clients/logo4.png" class="img-responsive" />
+									<a href="http://www.nic.in/">
+									<img alt="logo" src="img/clients/4.png" class="img-responsive" />
+									</a>
 								</div>									
 								
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<img alt="logo" src="img/clients/logo5.png" class="img-responsive" />
+									<a href="https://www.mygov.in/">
+									<img alt="logo" src="img/clients/5.png" class="img-responsive" />
+									</a>
 								</div>									
 								<div class="col-xs-6 col-md-2 aligncenter client">
-									<img alt="logo" src="img/clients/logo6.png" class="img-responsive" />
+									<a href="http://mhrd.gov.in/">
+									<img alt="logo" src="img/clients/6.png" class="img-responsive" />
+									</a>
 								</div>	
 
 				</div>

@@ -66,7 +66,7 @@
                                 Licensing information: https://bootstrapmade.com/license/
                                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=ONLINE_CAREER_COUNSELING
                             -->
-                            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                            <a href="http://cusat.ac.in/">Bootstrap Theme</a> by <a href="http://dca.cusat.ac.in/">Group 'DCA CUSAT 6'</a>
                         </div>
 					</div>
 				</div>
