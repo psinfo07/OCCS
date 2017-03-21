@@ -2,6 +2,10 @@
 <html lang="en">
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	<jsp:include page="css_part.jsp" />
+<head>
+
+</head>	
+	
 <body>
 
 <div id="wrapper">
@@ -406,10 +410,11 @@ There are no wrong answers to any of the questionnaire.</p>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 class="modal-title" style="color:green">
 						<span class="glyphicon glyphicon-log-in" style="color:green"></span> Login
+						<span id="failuremsg" style="color:red">!!!</span>
 					</h4>
 				</div>
 				<div class="modal-body" style="color:green">          		  
-					<form   action="user_login" method="post">  
+					<form action="#"  autocomplete="off"  method="post" id="loginForm">  
 						<div class="form-group">
 							<label for="email">Email:</label>
 							<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
@@ -421,7 +426,7 @@ There are no wrong answers to any of the questionnaire.</p>
 						<div class="checkbox">
 							<label><input type="checkbox">Remember me</label>
 						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
+						<input type="submit" class="btn btn-default" value="Submit" />
 					</form>	 
 				</div>
 				<div class="modal-footer"></div>
@@ -489,4 +494,22 @@ There are no wrong answers to any of the questionnaire.</p>
 	</div>
 
 </body>
+
+<script>
+$("#loginForm").submit(function(){debugger;
+		$.post('user_login', $("#loginForm").serialize(),
+				function( data ) {
+						if(data=="SUCCESS"){
+							window.location.href="login_home.jsp";
+						}else{
+							$("#failuremsg").text("Invalid UserName/Password !!!");
+						}
+							
+		});
+	return false;
+	
+});
+
+</script>
+
 </html>

@@ -1,11 +1,13 @@
 package com.cusat.hackathon.servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.cusat.hackathon.model.PersonalDetail;
 import com.cusat.hackathon.model.User;
@@ -24,9 +26,11 @@ public class UserLogin extends HttpServlet {
 	 * 
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter pw= response.getWriter();
+		
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-		
 		User user =new User();
 		PersonalDetail pd = new PersonalDetail();
 		pd.setEmailId(email);
@@ -35,11 +39,16 @@ public class UserLogin extends HttpServlet {
 		UserService userService= new UserServiceImpl();
 		user = userService.userLogin(user);
 		request.setAttribute("user", user);
+		
 		if(null!=user){
-			request.getRequestDispatcher("login_home.jsp").forward(request, response);
+			HttpSession session = request.getSession(true);
+			session.setAttribute("user", user);
+			pw.print("SUCCESS");
+			//request.getRequestDispatcher("login_home.jsp").forward(request, response);
 		}else{
-			request.setAttribute("key", "Invalid UserName/Password !!!"); 
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			/*request.setAttribute("key", "Invalid UserName/Password !!!"); 
+			request.getRequestDispatcher("index.jsp").forward(request, response);*/
+			pw.print("FAILURE");
 		}
 	
 	}
