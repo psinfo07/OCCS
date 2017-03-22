@@ -10,6 +10,10 @@
 		<servlet-name>UserLogin</servlet-name>
 		<url-pattern>/user_login</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout.form</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -34,6 +38,13 @@
   	<display-name>UserLogin</display-name>
   	<servlet-name>UserLogin</servlet-name>
   	<servlet-class>com.cusat.hackathon.servlets.UserLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Logout</display-name>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.Logout</servlet-class>
   </servlet>
 <!--  -->
 </web-app>

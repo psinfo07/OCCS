@@ -1,6 +1,10 @@
 <jsp:include page="header_login.jsp"/>
 <jsp:include page="css_part.jsp"/>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:if test="${empty user}">
+    <c:redirect url="index.jsp"/>
+    
+</c:if>
 <section id="content">
 
 	<div class="container">

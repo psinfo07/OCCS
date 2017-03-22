@@ -1,5 +1,6 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 	
+	
 	<header>
 			<div class="top">
 				<div class="container">
@@ -15,7 +16,7 @@
 						<div class="col-md-3">
 							<ul class="topleft-info">
 								<li><b><c:out value="${user.personalDetail.name}" /></b><span class="glyphicon glyphicon-user" style="color:green"></span></li>
-								<li><a href="#" data-toggle="modal" data-target="#myModal" style="color:green"><span class="glyphicon glyphicon-log-in" style="color:green"></span> LogOut</a></li>
+								<li><a href="logout.form" style="color:green"><span class="glyphicon glyphicon-log-in" style="color:green"></span> LogOut</a></li>
 							</ul>							
 						</div>																
 						
