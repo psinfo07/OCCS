@@ -22,9 +22,7 @@ import com.cusat.hackathon.services.UserServiceImpl;
 public class UserLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * 
-	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter pw= response.getWriter();

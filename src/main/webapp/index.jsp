@@ -490,7 +490,7 @@ There are no wrong answers to any of the questionnaire.</p>
 	</div>
 
 </body>
-
+<!-- nothing -->
 <script>
 $("#loginForm").submit(function(){debugger;
 		$.post('user_login', $("#loginForm").serialize(),

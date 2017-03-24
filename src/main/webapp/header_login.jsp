@@ -42,7 +42,7 @@
                              </ul>   --> 
 								
                             				
-						<!-- nothing -->
+						<!-- nothing here -->
                        
 									
 										<li><a href="logout.jsp">Login</a></li>							
