@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 
 import com.cusat.hackathon.dbconn.DatabaseConnection;
 import com.cusat.hackathon.model.CorrespondenceAddress;
@@ -208,11 +209,30 @@ public class UserDao {
 		ResultSet rs=ps.executeQuery();
 		if(rs.next()){
 			isValid=true;
+			saveLogDetails(con,user);
 		}
 		} catch (SQLException e) {
 		e.printStackTrace();
 	}
 	return isValid;
+   }
+   
+   
+   public boolean saveLogDetails(Connection con, User user){
+	   String query = "INSERT INTO log(userid) VALUES(?)";
+	   int i=0;
+	   boolean success = false;
+	   try{
+		   PreparedStatement ps = con.prepareStatement(query);
+		   ps.setString(1, user.getPersonalDetail().getEmailId());
+		   i = ps.executeUpdate();
+		   if(i>0){
+			   success = true;
+		   }
+	   }catch (Exception e) {
+		   success = false;
+	}
+	return success;
 	   
    }
 }
