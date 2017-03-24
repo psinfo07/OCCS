@@ -44,10 +44,8 @@ public class UserLogin extends HttpServlet {
 			HttpSession session = request.getSession(true);
 			session.setAttribute("user", user);
 			pw.print("SUCCESS");
-			//request.getRequestDispatcher("login_home.jsp").forward(request, response);
+			
 		}else{
-			/*request.setAttribute("key", "Invalid UserName/Password !!!"); 
-			request.getRequestDispatcher("index.jsp").forward(request, response);*/
 			pw.print("FAILURE");
 		}
 		

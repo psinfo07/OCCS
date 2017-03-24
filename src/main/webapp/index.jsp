@@ -410,7 +410,7 @@ There are no wrong answers to any of the questionnaire.</p>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 class="modal-title" style="color:green">
 						<span class="glyphicon glyphicon-log-in" style="color:green"></span> Login
-						<span id="failuremsg" style="color:red">!!!</span>
+						<span id="failuremsg" style="color:red"></span>
 					</h4>
 				</div>
 				<div class="modal-body" style="color:green">          		  
@@ -448,22 +448,22 @@ There are no wrong answers to any of the questionnaire.</p>
 					</h4>
 				</div>
 				<div class="modal-body" style="color:green">          		  
-					<form action="create_user" method="post">
+					<form action="create_user" autocomplete="off" method="post"  id="regForm">
 						<div class="form-group">
 							<label for="name">Name:</label>
-							<input type="text" class="form-control" name="name" id="name" maxlength="30" placeholder="Enter Name">
+							<input type="text" class="form-control" name="name" id="name" maxlength="30" placeholder="Enter Name" required="required">
 						</div>
 						<div class="form-group">
 							<label for="email">Email:</label>
-							<input type="email" class="form-control" name="email" id="email" maxlength="30" placeholder="Enter email">
+							<input type="email" class="form-control" name="email" id="email" maxlength="30" placeholder="Enter email" required="required">
 						</div>
 						<div class="form-group">
 							<label for="pwd">Password:</label>
-							<input type="password" class="form-control" name="password" id="pwd" maxlength="15" placeholder="Enter password">
+							<input type="password" class="form-control" name="password" id="pwd" maxlength="15" placeholder="Enter password" required="required">
 						</div>
 						<div class="form-group">
 							<label for="cpwd">Confirm Password:</label>
-							<input type="password" class="form-control" name="cpassword" id="cpwd" maxlength="15" placeholder="Confirm password">
+							<input type="password" class="form-control" name="cpassword" id="cpwd" maxlength="15" placeholder="Confirm password"required="required">
 						</div>
 						<div class="form-group">
 						<label for="edubox">Select Highest Education:</label>
@@ -475,17 +475,13 @@ There are no wrong answers to any of the questionnaire.</p>
 							<option value="catid04"> XIIth Grade </option>
 							<option value="catid05"> Xth Grade </option>
 							<option value="catid06"> Other </option>
-							<option value="catid07"> Cirtification1 </option>
-							<option value="catid08"> Cirtification2  </option>
-							<option value="catid09"> Cirtification3  </option>
-							<option value="catid10"> Cirtification4  </option>
 							</select>
 							<!-- <input type="text" class="form-control" id="hEducation" placeholder="Enter Higher Education"> -->
 						</div>
 						<!--div class="checkbox">
 							<label><input type="checkbox"> Remember me</label>
 						</div-->
-						<button type="submit" class="btn btn-default">Register</button>
+						<input type="submit" class="btn btn-default" value="Register" /> 
 					</form>	  
 				</div>
 				<div class="modal-footer"></div>
@@ -509,6 +505,9 @@ $("#loginForm").submit(function(){debugger;
 	return false;
 	
 });
+
+
+
 
 </script>
 

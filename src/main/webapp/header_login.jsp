@@ -15,7 +15,7 @@
 						
 						<div class="col-md-3">
 							<ul class="topleft-info">
-								<li><b><c:out value="${user.personalDetail.name}" /></b><span class="glyphicon glyphicon-user" style="color:green"></span></li>
+								<li><b>Welcome <c:out value="${user.personalDetail.name}" /></b></li>
 								<li><a href="logout.form" style="color:green"><span class="glyphicon glyphicon-log-in" style="color:green"></span> LogOut</a></li>
 							</ul>							
 						</div>																

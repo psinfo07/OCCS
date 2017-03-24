@@ -40,7 +40,8 @@ public class CreateUser extends HttpServlet {
 		UserService userService = new UserServiceImpl();
 		 flag = userService.createUser(user);
 		 if(flag){
-			 response.sendRedirect("success.jsp");
+			    request.setAttribute("key", "Registered Successfully !!! Login to Continue... !!!"); 
+				request.getRequestDispatcher("index.jsp").forward(request, response);
 		 }
 		 else {
 			 request.setAttribute("key", "User already exists !!!"); 
