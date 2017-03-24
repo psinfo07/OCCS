@@ -1,6 +1,6 @@
 package com.cusat.hackathon.servlets;
-
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -38,7 +38,7 @@ public class CreateUser extends HttpServlet {
 		pd.setHqualification(hqualification);
 		user.setPersonalDetail(pd);
 		UserService userService = new UserServiceImpl();
-		 flag = userService.createUser(user);
+			flag = userService.createUser(user);
 		 if(flag){
 			    request.setAttribute("key", "Registered Successfully !!! Login to Continue..."); 
 				request.getRequestDispatcher("index.jsp").forward(request, response);

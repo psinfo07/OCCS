@@ -11,13 +11,15 @@ import com.cusat.hackathon.model.PermanentAddress;
 import com.cusat.hackathon.model.User;
 
 public class UserDao {
-	public boolean createUser(User user) {
+	public boolean createUser(User user){
 		
 		Connection con = DatabaseConnection.getConnectivity();
 		int i=0;
 		boolean success=false;
 		String query ="INSERT INTO personal_details(name,email_id,password,hqualification) VALUES(?,?,?,?)";
+		
 		try {
+			con.setAutoCommit(false);
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setString(1,user.getPersonalDetail().getName());
 			ps.setString(2,user.getPersonalDetail().getEmailId());
@@ -25,15 +27,108 @@ public class UserDao {
 			ps.setString(4,user.getPersonalDetail().getHqualification());
 			 i = ps.executeUpdate();
 			if(i>0) {
-				success= true;
+				if(saveCaddress(con,user)
+					&& savePAddress(con,user)
+					&& saveResult(con,user)
+					&& saveStudentEducationDetails(con,user)){
+					success= true;
+					con.commit();
+				}else{
+					con.rollback();
+				}
+				
+				
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
+			try {
+				con.rollback();
+			} catch (SQLException e1) {
+				success= false;
+			}
+			
 			success= false;
 			e.printStackTrace();
 		}
 		
 		return success;
 	}
+	
+	//Save correspondance address
+	public boolean saveCaddress(Connection con,User user) {
+	String query = "INSERT INTO c_address(userid) VALUES(?)";
+	int i=0;
+	boolean success = false;
+	try{
+		PreparedStatement ps = con.prepareStatement(query);
+		ps.setString(1, user.getPersonalDetail().getEmailId());
+		i = ps.executeUpdate();
+		if(i>0){
+			success = true;
+		}
+	}catch(SQLException e){
+		success = false;
+		e.printStackTrace();
+	}
+	return success;
+	}
+	
+	//Save Permanent Address
+	public boolean savePAddress(Connection con,User user) {
+		String query = " INSERT INTO p_address(userid) VALUES(?)";
+		int i = 0;
+		boolean success = false;
+		try{
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1,user.getPersonalDetail().getEmailId());
+			i = ps.executeUpdate();
+			if(i>0){
+				success = true;
+			}
+		}catch(SQLException e){
+			success = false;
+			e.printStackTrace();
+		}
+		return success;
+	}
+	
+	// Save Result
+   public boolean saveResult(Connection con,User user) {
+	   String query = " INSERT INTO result(userid) VALUES(?)";
+		int i = 0;
+		boolean success = false;
+		try{
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1,user.getPersonalDetail().getEmailId());
+			i = ps.executeUpdate();
+			if(i>0){
+				success = true;
+			}
+		}catch(SQLException e){
+			success = false;
+			e.printStackTrace();
+		}
+		return success;
+	}
+   
+   //Save Educational Details
+   public boolean saveStudentEducationDetails(Connection con,User user) {
+	   String query = " INSERT INTO student_edu_detail(userid) VALUES(?)";
+		int i = 0;
+		boolean success = false;
+		try{
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1,user.getPersonalDetail().getEmailId());
+			i = ps.executeUpdate();
+			if(i>0){
+				success = true;
+			}
+		}catch(SQLException e){
+			success = false;
+			e.printStackTrace();
+		}
+		return success;
+	}
+	
 	
 	/**
 	 * 
@@ -47,9 +142,9 @@ public class UserDao {
 	     		+ " pa.userid as pa_userId,pa.addressline1,pa.addressline2,pa.city,pa.dist,pa.state,pa.pin,"
 	     		+ " ca.userid as ca_userId,ca.addressline1 as ca_add1,ca.addressline2 as ca_add2,ca.city as ca_city,ca.dist as ca_dist,ca.state as ca_state,ca.pin as ca_pin "
 	     		+ " FROM personal_details pd,p_address pa,c_address ca "
-	     		/*+ " WHERE pd.email_id=ca.userid "
-	     		+ " AND pd.email_id=pa.userid"*/
-	     		+ " WHERE pd.email_id = ? and pd.password = ? and pd.valid=?";
+	     		+ " WHERE pd.email_id=ca.userid "
+	     		+ " AND pd.email_id=pa.userid"
+	     		+ " AND pd.email_id = ? and pd.password = ? and pd.valid=?";
 	     try {
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setString(1, user.getPersonalDetail().getEmailId());

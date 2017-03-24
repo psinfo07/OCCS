@@ -7,7 +7,7 @@ public class UserServiceImpl implements UserService {
 		
 	UserDao userDao=new  UserDao();
 	
-	public boolean createUser(User user) {
+	public boolean createUser(User user){
 		return userDao.createUser(user);
 	}
 
