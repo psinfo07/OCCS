@@ -1,4 +1,4 @@
-<!-- <Research/MPHIL/Equivalent details form> -->
+<!-- <Research/MPHIL/ etc Equivalent details form> -->
 
 	<div id="qualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
@@ -53,11 +53,11 @@
     			</div>
     			
     			<div class="radio-inline">
-      				<label><input type="radio" name="pgCgpa">CGPA</label>
+      				<label><input type="radio" name="pgCgpa" value="cgpa">CGPA</label>
     			</div>
  
     			<div class="radio-inline">
-      				<label><input type="radio" name="pgPercentage">Percentage</label>
+      				<label><input type="radio" name="pgCgpa" value="Percentage">Percentage</label>
     			</div><br><br> 			
     			<button id="resSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('gQualInfo').style.display='block';document.getElementById('qualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'">Next</button>
    
@@ -92,10 +92,10 @@
     			</div>
     			
     			<div class="radio-inline">
-      				<label><input type="radio" name="gCgpa">CGPA</label>
+      				<label><input type="radio" name="gCgpa" value="cgpa">CGPA</label>
     			</div>
     			<div class="radio-inline">
-      				<label><input type="radio" name="gPercentage">Percentage</label>
+      				<label><input type="radio" name="gCgpa" value="Percentage">Percentage</label>
     			</div><br><br>
     			
     			<div class="form-group">
@@ -118,12 +118,12 @@
       				<label for="interMarks">Marks Obtained:</label>
       				<input type="text" class="form-control" name="interMarks" maxlength="15" placeholder="Marks Obtainedr">
     			</div>
-    			<div class="radio-inline">
-      				<label><input type="radio" name="interCgpa">CGPA</label>
+    			<<div class="radio-inline">
+      				<label><input type="radio" name="interCgpa" value="cgpa">CGPA</label>
     			</div>
     			<div class="radio-inline">
-      				<label><input type="radio" name="interPercentage">Percentage</label>
-    			</div><br><br> 			
+      				<label><input type="radio" name="interCgpa" value="Percentage">Percentage</label>
+    			</div><br><br>		
     			<button id="gSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='block';document.getElementById('certQualInfo').style.display='none'">Next</button>
     			</form>	
   	</div>
@@ -158,12 +158,11 @@
     			</div>
     			
     			<div class="radio-inline">
-      				<label><input type="radio" name="otherCgpa">CGPA</label>
+      				<label><input type="radio" name="otherCgpa" value="cgpa">CGPA</label>
     			</div>
-  
     			<div class="radio-inline">
-      				<label><input type="radio" name="otherPercentage">Percentage</label>
-    			</div><br><br> 	
+      				<label><input type="radio" name="otherCgpa" value="Percentage">Percentage</label>
+    			</div><br><br>
     			
     			<div class="form-group">
       				<label for="tenPrograme">Xth Standard:</label>
@@ -187,11 +186,11 @@
     			</div>
     			
     			<div class="radio-inline">
-      				<label><input type="radio" name="tenCgpa">CGPA</label>
+      				<label><input type="radio" name="tenCgpa" value="cgpa">CGPA</label>
     			</div>
     			<div class="radio-inline">
-      				<label><input type="radio" name="tenPercentage">Percentage</label>
-    			</div><br><br>		
+      				<label><input type="radio" name="tenCgpa" value="Percentage">Percentage</label>
+    			</div><br><br>
     			<button id="tenSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='block'">Next</button>
   			</form>		
   	</div>
