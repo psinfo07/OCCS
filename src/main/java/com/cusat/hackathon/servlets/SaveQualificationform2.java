@@ -19,8 +19,27 @@ public class SaveQualificationform2 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter pw= response.getWriter();
-		String resProgramme =request.getParameter("gProgramme");
-			pw.print("SUCCESS");
+		String gProgramme =request.getParameter("gProgramme");
+		String gInstitute =request.getParameter("gInstitute");
+		String gDuration =request.getParameter("gDuration");
+		String gYear =request.getParameter("gYear");
+		Double gMarks =Double.parseDouble(request.getParameter("gMarks"));
+		String gCgpa =request.getParameter("gCgpa");
+		
+		String interProgramme =request.getParameter("interProgramme");
+		String interInstitute =request.getParameter("interInstitute");
+		String interDuration =request.getParameter("interDuration");
+		String interYear =request.getParameter("interYear");
+		Double interMarks =Double.parseDouble(request.getParameter("interMarks"));
+		String interCgpa =request.getParameter("interCgpa");
+
+		pw.print(gCgpa);
+		pw.print(gProgramme);
+		pw.print(interProgramme);
+		pw.print(interCgpa);
+
+		pw.print("SUCCESS");
+		
 	}
 
 }
