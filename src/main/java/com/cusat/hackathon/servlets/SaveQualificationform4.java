@@ -34,12 +34,6 @@ public class SaveQualificationform4 extends HttpServlet {
 		String foi3=request.getParameter("foi3");
 		String foi4=request.getParameter("foi4");
 			pw.print("SUCCESS");
-			
-			pw.print(duration4);
-			pw.print(subject2);
-			pw.print( foi1);
-			
-			
 	}
 
 }
