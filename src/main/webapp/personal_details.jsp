@@ -1,6 +1,6 @@
 <div id="personalDetails" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Personal Info</h3>
-  			<form>
+  			<form action="update_user_details"  method="post">
     			<div class="form-group">
       				<label for="name">Name:</label>
       				<input type="text" class="form-control" name="name" value="${user.personalDetail.name}" placeholder="Enter Name">
@@ -19,17 +19,17 @@
     			</div>    			
 
 				<div class="form-group">
- 					<label for="House No.">Address:</label>
- 					<input type="text" class="form-control" placeholder="Enter House No">
+ 					<label for="House No.">Address Line 1:</label>
+ 					<input type="text" class="form-control" name="add1" placeholder="Address Line1">
  				</div> 			
  				
  				<div class="form-group">
-      				<label for="street">Street:</label>
-      				<input type="text" class="form-control" name="street" placeholder="Enter Street">
+      				<label for="street">Address Line2</label>
+      				<input type="text" class="form-control" name="add2" placeholder="Address Line2">
     			</div>    			
  				<div class="form-group">
  					<label for="city">City:</label>
- 					<input type="text" class="form-control" placeholder="Enter City">
+ 					<input type="text" class="form-control" name="city" placeholder="Enter City">
  				</div> 			
  				
  				<div class="form-group">
