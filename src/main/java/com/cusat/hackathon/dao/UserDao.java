@@ -235,4 +235,99 @@ public class UserDao {
 	return success;
 	   
    }
+   
+   
+   public boolean updateUserDetails(User user){
+		Connection con = DatabaseConnection.getConnectivity();
+		boolean success = (updatePersonalDetail(con,user) 
+				|| updatePermanentAddress(con, user) 
+				|| updateCorrespondenseAddress(con, user))?true:false;
+		
+		return success;
+	}
+   
+   /**
+    * update personal deatils
+    * @param con
+    * @param user
+    * @return
+    */
+   public boolean updatePersonalDetail(Connection con , User user){
+	   String query = "UPDATE  personal_details set name=?, fname=?,mname=?,mobile=? WHERE email_id=?";
+	   int i=0;
+	   boolean success=false;
+	   try{
+		   	   PreparedStatement ps=con.prepareStatement(query);
+			   ps.setString(1,user.getPersonalDetail().getName());
+			   ps.setString(2,user.getPersonalDetail().getFatherName());
+			   ps.setString(3,user.getPersonalDetail().getMotherName());
+			   ps.setString(4, user.getPersonalDetail().getMobileNo());
+			   ps.setString(5,user.getPersonalDetail().getEmailId());
+			   i = ps.executeUpdate();
+			   if(i>0){
+				   	success=true;
+			   }
+	   }catch(SQLException e){
+		   success = false;
+	   }
+	return success;
+	   
+   }
+   /**
+    * Update permanent address
+    * @param con
+    * @param user
+    * @return
+    */
+   public boolean updatePermanentAddress(Connection con, User user){
+	   String query = "UPDATE p_address SET addressline1=?,addressline2=?,city=?,dist=?,state=?,pin=? WHERE userid=?";
+	   boolean success = false;
+	   int i=0;
+	   try{
+		      PreparedStatement ps=con.prepareStatement(query);
+			  ps.setString(1,user.getPermanentAddress().getAddressLine1());
+			  ps.setString(2, user.getPermanentAddress().getAddressLine2());
+			  ps.setString(3,user.getPermanentAddress().getCity());
+			  ps.setString(4,user.getPermanentAddress().getDist());
+			  ps.setString(5,user.getPermanentAddress().getState());
+			  ps.setString(6,user.getPermanentAddress().getPin());
+			  ps.setString(7, user.getPermanentAddress().getUserId());
+			  i = ps.executeUpdate();
+			  if(i>0){
+				  success = true;
+			  }
+	   }catch (SQLException e) {
+		   success = false;
+	}
+	   return success;
+   }
+ 
+   /**
+    * Update correspondence  address
+    * @param con
+    * @param user
+    * @return
+    */
+   public boolean updateCorrespondenseAddress(Connection con, User user){
+	   String query = "UPDATE p_address SET addressline1=?,addressline2=?,city=?,dist=?,state=?,pin=? WHERE userid=?";
+	   boolean success = false;
+	   int i=0;
+	   try{
+		      PreparedStatement ps=con.prepareStatement(query);
+			  ps.setString(1,user.getCorrespondenceAddress().getAddressLine1());
+			  ps.setString(2, user.getCorrespondenceAddress().getAddressLine2());
+			  ps.setString(3,user.getCorrespondenceAddress().getCity());
+			  ps.setString(4,user.getCorrespondenceAddress().getDist());
+			  ps.setString(5,user.getCorrespondenceAddress().getState());
+			  ps.setString(6,user.getCorrespondenceAddress().getPin());
+			  ps.setString(7, user.getCorrespondenceAddress().getUserId());
+			  i = ps.executeUpdate();
+			  if(i>0){
+				  success = true;
+			  }
+	   }catch (SQLException e) {
+		   success = false;
+	}
+	   return success;
+   }
 }
