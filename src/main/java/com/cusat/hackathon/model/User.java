@@ -1,11 +1,13 @@
 package com.cusat.hackathon.model;
 
+import java.util.Set;
+
 public class User {
 		private PersonalDetail personalDetail;
 		private PermanentAddress permanentAddress;
 		private CorrespondenceAddress correspondenceAddress;
 		private Cirtification cirtification;
-		private EduDetail eduDetail;
+		private Set<EduDetail> eduDetail;
 		private FieldOfInterest fieldOfInterest;
 		private Result result;
 		
@@ -22,16 +24,12 @@ public class User {
 		public void setCirtification(Cirtification cirtification) {
 			this.cirtification = cirtification;
 		}
-		/**
-		 * @return the eduDetail
-		 */
-		public EduDetail getEduDetail() {
+		
+		
+		public Set<EduDetail> getEduDetail() {
 			return eduDetail;
 		}
-		/**
-		 * @param eduDetail the eduDetail to set
-		 */
-		public void setEduDetail(EduDetail eduDetail) {
+		public void setEduDetail(Set<EduDetail> eduDetail) {
 			this.eduDetail = eduDetail;
 		}
 		/**

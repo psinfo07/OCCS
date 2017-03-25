@@ -1,12 +1,14 @@
 package com.cusat.hackathon.model;
 
+import java.math.BigDecimal;
+
 public class EduDetail {
 	private String userid;
 	private String program;
 	private String institute;
 	private String duration;
 	private String pyear;
-	private double marks;
+	private Float marks;
 	/**
 	 * @return the userid
 	 */
@@ -67,16 +69,17 @@ public class EduDetail {
 	public void setPyear(String pyear) {
 		this.pyear = pyear;
 	}
+	
 	/**
-	 * @return the marks1
+	 * @return the marks
 	 */
-	public double getMarks() {
+	public Float getMarks() {
 		return marks;
 	}
 	/**
 	 * @param marks the marks to set
 	 */
-	public void setMarks(double marks) {
+	public void setMarks(Float marks) {
 		this.marks = marks;
 	}
 	/**

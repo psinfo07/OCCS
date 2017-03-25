@@ -35,4 +35,9 @@ public class UserServiceImpl implements UserService {
 		return userDao.updateUserDetails(user);
 	}
 
+public boolean saveEduDetails(User user) {
+	
+	return userDao.saveEduDetails(user);
+}
+
 }
