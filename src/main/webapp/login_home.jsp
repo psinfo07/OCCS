@@ -67,14 +67,14 @@
 		</div>
 		
 		<!-- divider -->
-		<div class="container">
+		<!-- <div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="solidline">
 				</div>
 			</div>
 		</div>
-		</div>
+		</div> -->
 		
 <!-- <Personal Info Form> -->			
 	<jsp:include page="personal_details.jsp" />
@@ -91,7 +91,7 @@
   	
 </section>
 
-<jsp:include page="footer.jsp"/>
+<jsp:include page="footer_login.jsp"/>
 
 <script>
 $("#qform1").submit(function(){
