@@ -5,7 +5,7 @@
   			<form action="#"   id="qform1">
   				<div class="form-group">
       				<label for="resPrograme">Program Code(PHD&nbsp;/MPHIL&nbsp;/Equivalent):</label>
-      				<input type="text" class="form-control" name="resProgramme" value="catid01"maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="resProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="research">Institute Name:</label>
@@ -33,7 +33,7 @@
     			
     			<div class="form-group">
       				<label for="pgProgram">Program Code(Postgraduate):</label>
-      				<input type="text" class="form-control" name="pgProgram" value="catid02" maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="pgProgram" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="pgInstitute">Institute Name:</label>
@@ -72,7 +72,7 @@
   			<form action="#"   id="qform2">
   				<div class="form-group">
       				<label for="gPrograme">Programme Code(Graduation):</label>
-      				<input type="text" class="form-control" name="gProgramme" value="catid03" maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="gProgramme"  maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="gInstitute">Institute Name:</label>
@@ -100,7 +100,7 @@
     			
     			<div class="form-group">
       				<label for="interProgramme">Program Code(XIIth/Other:):</label>
-      				<input type="text" class="form-control" name="interProgramme" value="catid04" maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="interProgramme"  maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="interInstitute">Institute Name:</label>
@@ -138,7 +138,7 @@
     			
     			<div class="form-group">
       				<label for="otherProgramme">Program Code(Diploma/Other):</label>
-      				<input type="text" class="form-control" name="otherProgramme" value="catid06" maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="otherProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="otherInstitute">Institute Name:</label>
@@ -166,7 +166,7 @@
     			
     			<div class="form-group">
       				<label for="tenPrograme">Xth Standard:</label>
-      				<input type="text" class="form-control" name="tenProgramme" value="catid05" maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="tenProgramme"  maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="tenInstitute">Institute Name:</label>
