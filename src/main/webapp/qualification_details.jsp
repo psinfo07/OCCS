@@ -4,22 +4,25 @@
   			<h3>Qualification Details</h3>
   			<form>
   				<div class="form-group">
-      				<label for="resPrograme">Programme Code(PHD&nbsp;/MPHIL&nbsp;/Equivalent):</label>
-      				<input type="text" class="form-control" name="resProgramme" placeholder="Programme Code">
+      				<label for="resPrograme">Program Code(PHD&nbsp;/MPHIL&nbsp;/Equivalent):</label>
+      				<input type="text" class="form-control" name="resProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="research">Institute Name:</label>
-      				<input type="text" class="form-control" name="resInstitute" placeholder="Institute Name">
+      				<input type="text" class="form-control" name="resInstitute" maxlength="50" placeholder="Institute Name">
     			</div>
     			<div class="form-group">
-      				<label for="resDivision">Division:</label>
-      				<input type="text" class="form-control" name="resDivision" placeholder="Division">
+      				<label for="resDuration">Duration:</label>
+      				<input type="text" class="form-control" name="resDuration" maxlength="15" placeholder="Duration">
     			</div>
     			<div class="form-group">
       				<label for="resYear">Passing Year:</label>
-      				<input type="text" class="form-control" name="resYear" placeholder="Passing Year">
+      				<input type="text" class="form-control" name="resYear" maxlength="15" placeholder="Passing Year">
     			</div>
-    			
+    			<div class="form-group">
+      				<label for="resMarks">Marks Obtained:</label>	
+      				<input type="text" class="form-control" name="resmarks" maxlength="15" placeholder="Marks Obtained">
+    			</div>	
     			<div class="radio-inline">
       				<label><input type="radio" name="resCgpa">CGPA</label>
     			</div>
@@ -27,21 +30,26 @@
       				<label><input type="radio" name="resPercentage">Percentage</label>
     			</div><br><br>
     			
+    			
     			<div class="form-group">
-      				<label for="pgProgramme">Programme Code(Postgraduate):</label>
-      				<input type="text" class="form-control" name="pgProgramme" placeholder="Programme Code">
+      				<label for="pgProgram">Program Code(Postgraduate):</label>
+      				<input type="text" class="form-control" name="pgProgram" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="pgInstitute">Institute Name:</label>
-      				<input type="text" class="form-control" name="pgInstitute" placeholder="Institute Name">
+      				<input type="text" class="form-control" name="pgInstitute" maxlength="50" placeholder="Institute Name">
     			</div>
     			<div class="form-group">
-      				<label for="pgDivision">Division:</label>
-      				<input type="text" class="form-control" name="pgDivision" placeholder="Division">
+      				<label for="pgDuration">Duration:</label>
+      				<input type="text" class="form-control" name="pgDuration" maxlength="15" placeholder="Duration">
     			</div>
     			<div class="form-group">
       				<label for="pgYear">Passing Year:</label>
-      				<input type="text" class="form-control" name="pgYear" placeholder="Passing Year">
+      				<input type="text" class="form-control" name="pgYear" maxlength="15" placeholder="Passing Year">
+    			</div>
+    			<div class="form-group">
+      				<label for="pgMarks">Marks Obtained:</label>
+      				<input type="text" class="form-control" name="pgMarks" maxlength="15" placeholder="Marks Obtained">
     			</div>
     			
     			<div class="radio-inline">
@@ -64,19 +72,23 @@
   			<form>
   				<div class="form-group">
       				<label for="gPrograme">Programme Code(Graduation):</label>
-      				<input type="text" class="form-control" name="gProgramme" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="gProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="gInstitute">Institute Name:</label>
-      				<input type="text" class="form-control" name="gInstitute" placeholder="Institute Name">
+      				<input type="text" class="form-control" name="gInstitute" maxlength="50" placeholder="Institute Name">
     			</div>
     			<div class="form-group">
-      				<label for="gDivision">Division:</label>
-      				<input type="text" class="form-control" name="gDivision" placeholder="Division">
+      				<label for="gDuration">Duration:</label>
+      				<input type="text" class="form-control" name="gDuration" maxlength="15" placeholder="Duration">
     			</div>
     			<div class="form-group">
       				<label for="gYear">Passing Year:</label>
-      				<input type="text" class="form-control" name="gYear" placeholder="Passing Year">
+      				<input type="text" class="form-control" name="gYear" maxlength="15" placeholder="Passing Year">
+    			</div>
+    			<div class="form-group">
+      				<label for="gMarks">Marks Obtained:</label>
+      				<input type="text" class="form-control" name="gMarks" maxlength="15" placeholder="Marks Obtained">
     			</div>
     			
     			<div class="radio-inline">
@@ -87,22 +99,25 @@
     			</div><br><br>
     			
     			<div class="form-group">
-      				<label for="interProgramme">Programme Code(Postgraduate):</label>
-      				<input type="text" class="form-control" name="interProgramme" placeholder="Programme Code">
+      				<label for="interProgramme">Program Code(XIIth/Other:):</label>
+      				<input type="text" class="form-control" name="interProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="interInstitute">Institute Name:</label>
-      				<input type="text" class="form-control" name="interInstitute" placeholder="Institute Name">
+      				<input type="text" class="form-control" name="interInstitute" maxlength="50" placeholder="Institute Name">
     			</div>
     			<div class="form-group">
-      				<label for="interDivision">Division:</label>
-      				<input type="text" class="form-control" name="interDivision" placeholder="Division">
+      				<label for="interDivision">Duration:</label>
+      				<input type="text" class="form-control" name="interDuration" maxlength="15" placeholder="Duration">
     			</div>
     			<div class="form-group">
       				<label for="interYear">Passing Year:</label>
-      				<input type="text" class="form-control" name="interYear" placeholder="Passing Year">
+      				<input type="text" class="form-control" name="interYear" maxlength="15" placeholder="Passing Year">
     			</div>
-    			
+    			<div class="form-group">
+      				<label for="interMarks">Marks Obtained:</label>
+      				<input type="text" class="form-control" name="interMarks" maxlength="15" placeholder="Marks Obtainedr">
+    			</div>
     			<div class="radio-inline">
       				<label><input type="radio" name="interCgpa">CGPA</label>
     			</div>
@@ -121,45 +136,27 @@
 	<div id="tenQualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
   			<form>
-  				<div class="form-group">
-      				<label for="tenPrograme">Xth/Other:</label>
-      				<input type="text" class="form-control" name="tenProgramme" placeholder="Programme Code">
-    			</div>
-    			<div class="form-group">
-      				<label for="tenInstitute">Institute Name:</label>
-      				<input type="text" class="form-control" name="tenInstitute" placeholder="Institute Name">
-    			</div>
-    			<div class="form-group">
-      				<label for="tenDivision">Division:</label>
-      				<input type="text" class="form-control" name="tenDivision" placeholder="Division">
-    			</div>
-    			<div class="form-group">
-      				<label for="tenYear">Passing Year:</label>
-      				<input type="text" class="form-control" name="tenYear" placeholder="Passing Year">
-    			</div>
-    			
-    			<div class="radio-inline">
-      				<label><input type="radio" name="tenCgpa">CGPA</label>
-    			</div>
-    			<div class="radio-inline">
-      				<label><input type="radio" name="tenPercentage">Percentage</label>
-    			</div><br><br>
+  				
     			
     			<div class="form-group">
-      				<label for="otherProgramme">Programme Code(Postgraduate):</label>
-      				<input type="text" class="form-control" name="otherProgramme" placeholder="Programme Code">
+      				<label for="otherProgramme">Program Code(Diploma/Other):</label>
+      				<input type="text" class="form-control" name="otherProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="otherInstitute">Institute Name:</label>
-      				<input type="text" class="form-control" name="otherInstitute" placeholder="Institute Name">
+      				<input type="text" class="form-control" name="otherInstitute" maxlength="50" placeholder="Institute Name">
     			</div>
     			<div class="form-group">
-      				<label for="otherDivision">Division:</label>
-      				<input type="text" class="form-control" name="otherDivision" placeholder="Division">
+      				<label for="otherDuration">Duration:</label>
+      				<input type="text" class="form-control" name="otherDuration" maxlength="15" placeholder="Duration">
     			</div>
     			<div class="form-group">
       				<label for="otherYear">Passing Year:</label>
-      				<input type="text" class="form-control" name="otherYear" placeholder="Passing Year">
+      				<input type="text" class="form-control" name="otherYear" maxlength="15" placeholder="Passing Year">
+    			</div>
+    			<div class="form-group">
+      				<label for="otherMarks">Marks Obtained:</label>
+      				<input type="text" class="form-control" name="otherMarks" maxlength="15" placeholder="Marks Obtained">
     			</div>
     			
     			<div class="radio-inline">
@@ -168,7 +165,35 @@
     			<form>
     			<div class="radio-inline">
       				<label><input type="radio" name="otherPercentage">Percentage</label>
-    			</div><br><br> 			
+    			</div><br><br> 	
+    			
+    			<div class="form-group">
+      				<label for="tenPrograme">Xth Standard:</label>
+      				<input type="text" class="form-control" name="tenProgramme" maxlength="15" placeholder="Programme Code">
+    			</div>
+    			<div class="form-group">
+      				<label for="tenInstitute">Institute Name:</label>
+      				<input type="text" class="form-control" name="tenInstitute" maxlength="50" placeholder="Institute Name">
+    			</div>
+    			<div class="form-group">
+      				<label for="tenDuration">Duration:</label>
+      				<input type="text" class="form-control" name="tenDuration" maxlength="15" placeholder="Duration">
+    			</div>
+    			<div class="form-group">
+      				<label for="tenYear">Passing Year:</label>
+      				<input type="text" class="form-control" name="tenYear" maxlength="15" placeholder="Passing Year">
+    			</div>
+    			<div class="form-group">
+      				<label for="tenMarks">Marks Obtained:</label>
+      				<input type="text" class="form-control" name="tenMarks"  maxlength="15" placeholder="Marks Obtained">
+    			</div>
+    			
+    			<div class="radio-inline">
+      				<label><input type="radio" name="tenCgpa">CGPA</label>
+    			</div>
+    			<div class="radio-inline">
+      				<label><input type="radio" name="tenPercentage">Percentage</label>
+    			</div><br><br>		
     			<button id="tenSubmit" type="button" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='block'">Next</button>
     			</form>
   			</form>		
@@ -181,35 +206,144 @@
   				<div class="form-group">
       				<label for="firstCertificate">First Certification:</label>
     	 			<div class="row">
-  						<div class="col-sm-6"><input type="text" class="form-control" name="subject1" placeholder="Subject"></div>
-  						<div class="col-sm-6"><input type="text" name="duration1" class="form-control"placeholder="Duration"></div>  
+  						<div class="col-sm-6"><input type="text" class="form-control" name="subject1" maxlength="20" placeholder="Subject"></div>
+  						<div class="col-sm-6"><input type="text" name="duration1" class="form-control" maxlength="15" placeholder="Duration"></div>  
     				</div>
     			</div>
     			<div class="form-group">
       				<label for="SecondCertification">Second Certification:</label>
     	 			<div class="row">
-  						<div class="col-sm-6"><input type="text" class="form-control" name="subject1" placeholder="Subject"></div>
-  						<div class="col-sm-6"><input type="text" name="duration2" class="form-control" placeholder="Duration"></div>  
+  						<div class="col-sm-6"><input type="text" class="form-control" name="subject1" maxlength="20" placeholder="Subject"></div>
+  						<div class="col-sm-6"><input type="text" name="duration2" class="form-control" maxlength="15" placeholder="Duration"></div>  
     				</div>
     			</div>
     			<div class="form-group">
       				<label for="third">Third Certification:</label>
     	 			<div class="row">
-  						<div class="col-sm-6"><input type="text" class="form-control" name="subject3" placeholder="Subject"></div>
-  						<div class="col-sm-6"><input type="text" name="duration3" class="form-control" placeholder="Duration"></div>  
+  						<div class="col-sm-6"><input type="text" class="form-control" name="subject3" maxlength="20" placeholder="Subject"></div>
+  						<div class="col-sm-6"><input type="text" name="duration3" class="form-control" maxlength="15" placeholder="Duration"></div>  
     				</div>
     			</div>
     			<div class="form-group">
       				<label for="fourth">Fourth Certification</label>
     	 			<div class="row">
-  						<div class="col-sm-6"><input type="text" class="form-control" name="subject4" placeholder="Subject"></div>
-  						<div class="col-sm-6"><input type="text" name="duration4" class="form-control" placeholder="Subject"></div>  
+  						<div class="col-sm-6"><input type="text" class="form-control" name="subject4" maxlength="20" placeholder="Subject"></div>
+  						<div class="col-sm-6"><input type="text" name="duration4" class="form-control" maxlength="15" placeholder="Subject"></div>  
     				</div>
     			</div>
+    			<h3>Field of Interest Details :</h3>
+    			
+    			<!-- <div class="form-group">
+      				<label for="firstInterest">First Certification:</label>
+    	 			<div class="row">
+  						
+  						<div class="col-sm-6"><input type="text" name="duration1" class="form-control"placeholder="Duration"></div>  
+    				</div>
+    			</div> -->
     			<div class="form-group">
-      				<label for="fourth">Fourth Certification</label>
-    	 			
-    			</div>
+						<label for="foi">Select Field of Interest 1 :</label>
+							<select name="foi1" class="form-control">
+							<option value="INVAL">None </option>
+							<option value="sub01">Arts</option>
+							<option value="sub02">Commerce</option>
+							<option value="sub03">Computer Application</option>
+							<option value="sub04">Design</option>
+							<option value="sub05">Education & Training</option>
+							<option value="sub06">Engineering</option>
+							<option value="sub07">Forest</option>
+							<option value="sub08">Hotel Management</option>
+							<option value="sub09">Journalism</option>
+							<option value="sub10">Law</option>
+							<option value="sub11">Medical</option>
+							<option value="sub12">Management</option>
+							<option value="sub13">Farmacy</option>
+							<option value="sub14">Science</option>
+							<option value="sub15">Robotics</option>
+							<option value="sub16">AI</option>
+							<option value="sub17">Navy</option>
+							<option value="sub18">Civil Services</option>
+							<option value="sub19">Acting</option>
+							<option value="sub20">Fashion Designing</option>
+							</select>
+						</div>
+				<div class="form-group">
+						<label for="foi">Select Field of Interest 2 :</label>
+							<select name="foi2" class="form-control">
+							<option value="INVAL">None</option>
+							<option value="sub01">Arts</option>
+							<option value="sub02">Commerce</option>
+							<option value="sub03">Computer Application</option>
+							<option value="sub04">Design</option>
+							<option value="sub05">Education & Training</option>
+							<option value="sub06">Engineering</option>
+							<option value="sub07">Forest</option>
+							<option value="sub08">Hotel Management</option>
+							<option value="sub09">Journalism</option>
+							<option value="sub10">Law</option>
+							<option value="sub11">Medical</option>
+							<option value="sub12">Management</option>
+							<option value="sub13">Farmacy</option>
+							<option value="sub14">Science</option>
+							<option value="sub15">Robotics</option>
+							<option value="sub16">AI</option>
+							<option value="sub17">Navy</option>
+							<option value="sub18">Civil Services</option>
+							<option value="sub19">Acting</option>
+							<option value="sub20">Fashion Designing</option>
+							</select>
+						</div>
+    			<div class="form-group">
+						<label for="foi">Select Field of Interest 3 :</label>
+							<select name="foi3" class="form-control">
+							<option value="INVAL">None</option>
+							<option value="sub01">Arts</option>
+							<option value="sub02">Commerce</option>
+							<option value="sub03">Computer Application</option>
+							<option value="sub04">Design</option>
+							<option value="sub05">Education & Training</option>
+							<option value="sub06">Engineering</option>
+							<option value="sub07">Forest</option>
+							<option value="sub08">Hotel Management</option>
+							<option value="sub09">Journalism</option>
+							<option value="sub10">Law</option>
+							<option value="sub11">Medical</option>
+							<option value="sub12">Management</option>
+							<option value="sub13">Farmacy</option>
+							<option value="sub14">Science</option>
+							<option value="sub15">Robotics</option>
+							<option value="sub16">AI</option>
+							<option value="sub17">Navy</option>
+							<option value="sub18">Civil Services</option>
+							<option value="sub19">Acting</option>
+							<option value="sub20">Fashion Designing</option>
+							</select>
+						</div>
+				<div class="form-group">
+						<label for="foi">Select Field of Interest 4 :</label>
+							<select name="foi4" class="form-control">
+							<option value="INVAL">None</option>
+							<option value="sub01">Arts</option>
+							<option value="sub02">Commerce</option>
+							<option value="sub03">Computer Application</option>
+							<option value="sub04">Design</option>
+							<option value="sub05">Education & Training</option>
+							<option value="sub06">Engineering</option>
+							<option value="sub07">Forest</option>
+							<option value="sub08">Hotel Management</option>
+							<option value="sub09">Journalism</option>
+							<option value="sub10">Law</option>
+							<option value="sub11">Medical</option>
+							<option value="sub12">Management</option>
+							<option value="sub13">Farmacy</option>
+							<option value="sub14">Science</option>
+							<option value="sub15">Robotics</option>
+							<option value="sub16">AI</option>
+							<option value="sub17">Navy</option>
+							<option value="sub18">Civil Services</option>
+							<option value="sub19">Acting</option>
+							<option value="sub20">Fashion Designing</option>
+							</select>
+						</div>
     			<button id="certSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'">Submit</button>
   			</form>		
   	</div>
