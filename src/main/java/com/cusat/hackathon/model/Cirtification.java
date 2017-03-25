@@ -5,7 +5,7 @@ public class Cirtification {
 	private String foc;
 	private String duration;
 	/**
-	 * @return the userid
+	 * @return the userid 1
 	 */
 	public String getUserid() {
 		return userid;

@@ -68,7 +68,7 @@ public class EduDetail {
 		this.pyear = pyear;
 	}
 	/**
-	 * @return the marks
+	 * @return the marks1
 	 */
 	public double getMarks() {
 		return marks;
