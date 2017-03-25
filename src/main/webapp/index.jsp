@@ -20,7 +20,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-			<b><c:out value="${key}" /></b>
+			<b><center><c:out value="${key}" /></center></b>
 	<!-- Slider -->
         <div id="main-slider" class="main-slider flexslider">
             <ul class="slides">
