@@ -1,6 +1,5 @@
 package com.cusat.hackathon.dbconn;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,12 +28,14 @@ public class DatabaseConnection {
 	}
 	public static Connection getConnectivity(){
 		try {
-			con = DriverManager.getConnection(properties.getProperty("DB_URL"), properties.getProperty("DB_USERNAME"), properties.getProperty("DB_PASSWORD"));
+			if(null==con){			
+				con = DriverManager.getConnection(properties.getProperty("DB_URL"), properties.getProperty("DB_USERNAME"), properties.getProperty("DB_PASSWORD"));
+			}
 			System.out.println("connection successful"); 
 		} catch (SQLException e) {
 			System.out.println("ERROR: Unable to Connect to Database.");
 		}
-		
+		System.out.println(con +"-------------------"+con.hashCode());
 		return con;
 	}
 	public static void closeConnectivity() {

@@ -30,6 +30,10 @@
 		<servlet-name>SaveQualificationform4</servlet-name>
 		<url-pattern>/sqdform4</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateUserDetails</servlet-name>
+		<url-pattern>/update_user_details</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -89,6 +93,13 @@
   	<display-name>SaveQualificationform4</display-name>
   	<servlet-name>SaveQualificationform4</servlet-name>
   	<servlet-class>com.cusat.hackathon.servlets.SaveQualificationform4</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>UpdateUserDetails</display-name>
+  	<servlet-name>UpdateUserDetails</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.UpdateUserDetails</servlet-class>
   </servlet>
 <!--  -->
 </web-app>
