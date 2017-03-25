@@ -10,4 +10,5 @@ public interface UserService {
 		public boolean updateUserDetails(User user);
 		public boolean saveEduDetails(User user);
 		public boolean saveQualificationform4(User user);  
+		public boolean saveQualificationform2(User user);  
 }

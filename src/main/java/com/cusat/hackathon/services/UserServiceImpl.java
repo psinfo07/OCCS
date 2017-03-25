@@ -41,7 +41,15 @@ public boolean saveEduDetails(User user) {
 }
 
 public boolean saveQualificationform4(User user){
-    return userDao.SaveQualificationform4(user);
+    return userDao.saveQualificationform4(user);
 }
+
+public boolean saveQualificationform2(User user) {
+	// TODO Auto-generated method stub
+	return false;
+}
+
+
+ 
 
 }

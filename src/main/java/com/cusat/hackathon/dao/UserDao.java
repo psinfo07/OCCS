@@ -367,7 +367,7 @@ public boolean saveEduDetails(User user) {
 	return success;
 }
 
-public boolean SaveQualificationform4(User user) {
+public boolean saveQualificationform4(User user) {
 	Connection con  = DatabaseConnection.getConnectivity();
 	boolean s1 = certificationVal(con,user);
 	boolean s2 = foiVal(con,user);
@@ -437,4 +437,5 @@ public boolean foiVal(Connection con, User user) {
 //}
 	return success;
 }
+
 }
