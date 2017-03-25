@@ -2,7 +2,7 @@
 
 	<div id="qualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
-  			<form>
+  			<form action="#"   id="qform1">
   				<div class="form-group">
       				<label for="resPrograme">Program Code(PHD&nbsp;/MPHIL&nbsp;/Equivalent):</label>
       				<input type="text" class="form-control" name="resProgramme" maxlength="15" placeholder="Programme Code">
@@ -24,10 +24,10 @@
       				<input type="text" class="form-control" name="resmarks" maxlength="15" placeholder="Marks Obtained">
     			</div>	
     			<div class="radio-inline">
-      				<label><input type="radio" name="resCgpa">CGPA</label>
+      				<label><input type="radio" name="resCgpa" value="cgpa">CGPA</label>
     			</div>
     			<div class="radio-inline">
-      				<label><input type="radio" name="resPercentage">Percentage</label>
+      				<label><input type="radio" name="resCgpa" value="percentage">Percentage</label>
     			</div><br><br>
     			
     			
@@ -55,12 +55,12 @@
     			<div class="radio-inline">
       				<label><input type="radio" name="pgCgpa">CGPA</label>
     			</div>
-    			<form>
+ 
     			<div class="radio-inline">
       				<label><input type="radio" name="pgPercentage">Percentage</label>
     			</div><br><br> 			
-    			<button id="resSubmit" type="button" class="btn btn-default" onclick="document.getElementById('gQualInfo').style.display='block';document.getElementById('qualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'">Next</button>
-    			</form>
+    			<button id="resSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('gQualInfo').style.display='block';document.getElementById('qualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'">Next</button>
+   
   			</form>		
   	</div>
   	
@@ -69,7 +69,7 @@
 
 	<div id="gQualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
-  			<form>
+  			<form action="#"   id="qform2">
   				<div class="form-group">
       				<label for="gPrograme">Programme Code(Graduation):</label>
       				<input type="text" class="form-control" name="gProgramme" maxlength="15" placeholder="Programme Code">
@@ -121,13 +121,11 @@
     			<div class="radio-inline">
       				<label><input type="radio" name="interCgpa">CGPA</label>
     			</div>
-    			<form>
     			<div class="radio-inline">
       				<label><input type="radio" name="interPercentage">Percentage</label>
     			</div><br><br> 			
-    			<button id="gSubmit" type="button" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='block';document.getElementById('certQualInfo').style.display='none'">Next</button>
-    			</form>
-  			</form>		
+    			<button id="gSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='block';document.getElementById('certQualInfo').style.display='none'">Next</button>
+    			</form>	
   	</div>
 		
 
@@ -135,7 +133,7 @@
 
 	<div id="tenQualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
-  			<form>
+  			<form action="#"   id="qform3">
   				
     			
     			<div class="form-group">
@@ -162,7 +160,7 @@
     			<div class="radio-inline">
       				<label><input type="radio" name="otherCgpa">CGPA</label>
     			</div>
-    			<form>
+  
     			<div class="radio-inline">
       				<label><input type="radio" name="otherPercentage">Percentage</label>
     			</div><br><br> 	
@@ -194,15 +192,14 @@
     			<div class="radio-inline">
       				<label><input type="radio" name="tenPercentage">Percentage</label>
     			</div><br><br>		
-    			<button id="tenSubmit" type="button" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='block'">Next</button>
-    			</form>
+    			<button id="tenSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='block'">Next</button>
   			</form>		
   	</div>
 
 <!-- ghgh -->
 <div id="certQualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Certification Details</h3>
-  			<form>
+  			<form action="#"   id="qform4">
   				<div class="form-group">
       				<label for="firstCertificate">First Certification:</label>
     	 			<div class="row">
@@ -248,7 +245,7 @@
 							<option value="sub02">Commerce</option>
 							<option value="sub03">Computer Application</option>
 							<option value="sub04">Design</option>
-							<option value="sub05">Education & Training</option>
+							<option value="sub05">Education and Training</option>
 							<option value="sub06">Engineering</option>
 							<option value="sub07">Forest</option>
 							<option value="sub08">Hotel Management</option>
@@ -274,7 +271,7 @@
 							<option value="sub02">Commerce</option>
 							<option value="sub03">Computer Application</option>
 							<option value="sub04">Design</option>
-							<option value="sub05">Education & Training</option>
+							<option value="sub05">Education and Training</option>
 							<option value="sub06">Engineering</option>
 							<option value="sub07">Forest</option>
 							<option value="sub08">Hotel Management</option>
@@ -300,7 +297,7 @@
 							<option value="sub02">Commerce</option>
 							<option value="sub03">Computer Application</option>
 							<option value="sub04">Design</option>
-							<option value="sub05">Education & Training</option>
+							<option value="sub05">Education and Training</option>
 							<option value="sub06">Engineering</option>
 							<option value="sub07">Forest</option>
 							<option value="sub08">Hotel Management</option>
@@ -326,7 +323,7 @@
 							<option value="sub02">Commerce</option>
 							<option value="sub03">Computer Application</option>
 							<option value="sub04">Design</option>
-							<option value="sub05">Education & Training</option>
+							<option value="sub05">Education and Training</option>
 							<option value="sub06">Engineering</option>
 							<option value="sub07">Forest</option>
 							<option value="sub08">Hotel Management</option>

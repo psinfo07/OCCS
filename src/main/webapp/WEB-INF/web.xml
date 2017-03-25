@@ -14,6 +14,22 @@
 		<servlet-name>Logout</servlet-name>
 		<url-pattern>/logout.form</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SaveQualificationform1</servlet-name>
+		<url-pattern>/sqdform1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SaveQualificationform2</servlet-name>
+		<url-pattern>/sqdform2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SaveQualificationform3</servlet-name>
+		<url-pattern>/sqdform3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SaveQualificationform4</servlet-name>
+		<url-pattern>/sqdform4</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -45,6 +61,34 @@
   	<display-name>Logout</display-name>
   	<servlet-name>Logout</servlet-name>
   	<servlet-class>com.cusat.hackathon.servlets.Logout</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SaveQualificationform1</display-name>
+  	<servlet-name>SaveQualificationform1</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.SaveQualificationform1</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SaveQualificationform2</display-name>
+  	<servlet-name>SaveQualificationform2</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.SaveQualificationform2</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SaveQualificationform3</display-name>
+  	<servlet-name>SaveQualificationform3</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.SaveQualificationform3</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SaveQualificationform4</display-name>
+  	<servlet-name>SaveQualificationform4</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.SaveQualificationform4</servlet-class>
   </servlet>
 <!--  -->
 </web-app>

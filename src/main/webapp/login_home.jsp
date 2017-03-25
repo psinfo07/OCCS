@@ -92,3 +92,60 @@
 </section>
 
 <jsp:include page="footer.jsp"/>
+
+<script>
+$("#qform1").submit(function(){
+		$.post('sqdform1', $("#qform1").serialize(),
+				function( data ) {
+						if(data=="SUCCESS"){
+							document.getElementById('gQualInfo').style.display='block';document.getElementById('qualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none';
+						}else{
+							//$("#failuremsg").text("Invalid UserName/Password !!!");
+						}
+							
+		});
+	return false;
+	
+});
+
+$("#qform2").submit(function(){
+$.post('sqdform2', $("#qform2").serialize(),
+		function( data ) {
+				if(data=="SUCCESS"){
+					document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='block';document.getElementById('certQualInfo').style.display='none'
+				}else{
+					//$("#failuremsg").text("Invalid UserName/Password !!!");
+				}
+					
+});
+return false;
+
+});
+$("#qform3").submit(function(){
+$.post('sqdform3', $("#qform3").serialize(),
+		function( data ) {
+				if(data=="SUCCESS"){
+					document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='block'
+				}else{
+					//$("#failuremsg").text("Invalid UserName/Password !!!");
+				}
+					
+});
+return false;
+
+});
+$("#qform4").submit(function(){
+$.post('sqdform4', $("#qform4").serialize(),
+		function( data ) {
+				if(data=="SUCCESS"){
+					document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'
+				}else{
+					//$("#failuremsg").text("Invalid UserName/Password !!!");
+				}
+					
+});
+return false;
+
+});
+
+</script>
