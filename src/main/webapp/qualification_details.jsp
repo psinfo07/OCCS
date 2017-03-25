@@ -209,7 +209,7 @@
     			<div class="form-group">
       				<label for="SecondCertification">Second Certification:</label>
     	 			<div class="row">
-  						<div class="col-sm-6"><input type="text" class="form-control" name="subject1" maxlength="20" placeholder="Subject"></div>
+  						<div class="col-sm-6"><input type="text" class="form-control" name="subject2" maxlength="20" placeholder="Subject"></div>
   						<div class="col-sm-6"><input type="text" name="duration2" class="form-control" maxlength="15" placeholder="Duration"></div>  
     				</div>
     			</div>
