@@ -1,6 +1,6 @@
 package com.cusat.hackathon.model;
 
-public class Cirtification {
+public class Certification {
 	private String userid;
 	private String foc;
 	private String duration;
