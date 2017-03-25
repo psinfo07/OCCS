@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.cusat.hackathon.dbconn.DatabaseConnection;
+import com.cusat.hackathon.model.Certification;
 import com.cusat.hackathon.model.CorrespondenceAddress;
 import com.cusat.hackathon.model.EduDetail;
 import com.cusat.hackathon.model.PermanentAddress;
@@ -363,6 +364,77 @@ public boolean saveEduDetails(User user) {
 	
 	
 	
+	return success;
+}
+
+public boolean SaveQualificationform4(User user) {
+	Connection con  = DatabaseConnection.getConnectivity();
+	boolean s1 = certificationVal(con,user);
+	boolean s2 = foiVal(con,user);
+	boolean success = s1&&s2?true:false;
+	return success;
+}
+
+public boolean certificationVal(Connection con, User user) {
+	String query="INSERT INTO cirtification(userid,foc,Duration) VALUES(?,?,?)";
+	boolean success =false;
+	int[] i=new int[0];
+	try {
+		PreparedStatement ps=con.prepareStatement(query);
+		for(Certification cert:user.getCirtifications()){
+			ps.setString(1, cert.getUserid());
+			ps.setString(2,cert.getFoc());
+			ps.setString(3,cert.getDuration());
+			ps.addBatch();
+		}
+	/*	*/
+		i=ps.executeBatch();
+		if(i.length>0){
+			success=true;
+		}
+	} catch (SQLException e) {
+		success=false;
+	}
+	return success;
+}
+
+
+public boolean foiVal(Connection con, User user) {
+	String query="INSERT INTO foi(userid,foi1,foi2,foi3,foi4) VALUES(?,?,?,?,?)";
+	boolean success=false;
+	int i = 0;
+	try{
+		PreparedStatement ps = con.prepareStatement(query);
+		ps.setString(1, user.getFieldOfInterest().getUserId());
+		ps.setString(2, user.getFieldOfInterest().getfOInterest1());
+		ps.setString(3, user.getFieldOfInterest().getfOInterest2());
+		ps.setString(4, user.getFieldOfInterest().getfOInterest3());
+		ps.setString(5, user.getFieldOfInterest().getfOInterest4());
+		i = ps.executeUpdate();
+		if(i>0){
+			success = true;
+		}
+	}catch (SQLException e) {
+		success = false;
+	}
+//   int[] i=new int[0];
+//   try {
+//	PreparedStatement ps=con.prepareStatement(query);
+//		ps.setString(1,fil.getUserId());
+//		ps.setString(2,fil.getfOInterest1());
+//		ps.setString(3,fil.getfOInterest2());
+//		ps.setString(4,fil.getfOInterest3());
+//		ps.setString(5,fil.getfOInterest4());
+//		ps.addBatch();
+//	}
+//	
+//	i=ps.executeBatch();
+//	if(i.length>0){
+//		success=true;
+//	}
+//} catch (SQLException e) {
+//	success=false;
+//}
 	return success;
 }
 }

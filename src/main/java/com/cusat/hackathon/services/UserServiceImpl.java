@@ -40,4 +40,8 @@ public boolean saveEduDetails(User user) {
 	return userDao.saveEduDetails(user);
 }
 
+public boolean saveQualificationform4(User user){
+    return userDao.SaveQualificationform4(user);
+}
+
 }

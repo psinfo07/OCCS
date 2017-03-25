@@ -6,24 +6,14 @@ public class User {
 		private PersonalDetail personalDetail;
 		private PermanentAddress permanentAddress;
 		private CorrespondenceAddress correspondenceAddress;
-		private Cirtification cirtification;
+		private Set<Certification> cirtifications;
 		private Set<EduDetail> eduDetail;
 		private FieldOfInterest fieldOfInterest;
 		private Result result;
 		
 		
-		/**
-		 * @return the cirtification
-		 */
-		public Cirtification getCirtification() {
-			return cirtification;
-		}
-		/**
-		 * @param cirtification the cirtification to set
-		 */
-		public void setCirtification(Cirtification cirtification) {
-			this.cirtification = cirtification;
-		}
+		
+		
 		
 		
 		public Set<EduDetail> getEduDetail() {
@@ -88,5 +78,11 @@ public class User {
 			this.correspondenceAddress = correspondenceAddress;
 		}
 		
+		public Set<Certification> getCirtifications() {
+			return cirtifications;
+		}
+		public void setCirtifications(Set<Certification> cirtifications) {
+			this.cirtifications = cirtifications;
+		}
 		
 }
