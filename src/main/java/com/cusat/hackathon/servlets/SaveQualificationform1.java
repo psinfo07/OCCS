@@ -20,6 +20,20 @@ public class SaveQualificationform1 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter pw= response.getWriter();
 		String resProgramme =request.getParameter("resProgramme");
+		String resInstitute =request.getParameter("resInstitute");
+		String resDuration =request.getParameter("resDuration");
+		String resYear =request.getParameter("resYear");
+		Double resMarks =Double.parseDouble(request.getParameter("resMarks"));
+		String resCgpa=request.getParameter("resCgpa");
+		
+		String pgProgramme =request.getParameter("pgProgramme");
+		String pgInstitute =request.getParameter("pgInstitute");
+		String pgDuration =request.getParameter("pgDuration");
+		String pgYear =request.getParameter("pgYear");
+		Double pgMarks =Double.parseDouble(request.getParameter("pgMarks"));
+		String pgCgpa=request.getParameter("pgCgpa");
+		
+		
 			pw.print("SUCCESS");
 			
 		

@@ -21,7 +21,7 @@
     			</div>
     			<div class="form-group">
       				<label for="resMarks">Marks Obtained:</label>	
-      				<input type="text" class="form-control" name="resmarks" maxlength="15" placeholder="Marks Obtained">
+      				<input type="text" class="form-control" name="resMarks" maxlength="15" placeholder="Marks Obtained">
     			</div>	
     			<div class="radio-inline">
       				<label><input type="radio" name="resCgpa" value="cgpa">CGPA</label>
