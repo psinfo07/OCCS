@@ -238,9 +238,10 @@ public class UserDao {
    
    public boolean updateUserDetails(User user){
 		Connection con = DatabaseConnection.getConnectivity();
-		boolean success = (updatePersonalDetail(con,user) 
-				|| updatePermanentAddress(con, user) 
-				|| updateCorrespondenseAddress(con, user))?true:false;
+		boolean success1=updatePersonalDetail(con,user) ;
+		boolean success2=updatePermanentAddress(con, user);
+		boolean success3=updateCorrespondenseAddress(con, user);
+		boolean success = (success1	||  success2 || success3)?true:false;
 		
 		return success;
 	}
@@ -308,7 +309,7 @@ public class UserDao {
     * @return
     */
    public boolean updateCorrespondenseAddress(Connection con, User user){
-	   String query = "UPDATE p_address SET addressline1=?,addressline2=?,city=?,dist=?,state=?,pin=? WHERE userid=?";
+	   String query = "UPDATE c_address SET addressline1=?,addressline2=?,city=?,dist=?,state=?,pin=? WHERE userid=?";
 	   boolean success = false;
 	   int i=0;
 	   try{
