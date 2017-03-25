@@ -467,7 +467,7 @@ There are no wrong answers to any of the questionnaire.</p>
 						</div>
 						<div class="form-group">
 						<label for="edubox">Select Highest Education:</label>
-							<select name="qualification" class="form-control">
+							<select name="hqualification" class="form-control">
 							<option value="INVAL">-- Highest Qualification -- </option>
 							<option value="catid01"> Working Professional </option>
 							<option value="catid02"> Post Graduate </option>
