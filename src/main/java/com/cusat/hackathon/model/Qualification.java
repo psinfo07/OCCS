@@ -3,9 +3,7 @@ package com.cusat.hackathon.model;
 public class Qualification {
 	private String categoryId;
 	private String categoryName;
-	/**
-	 * @return the categoryId
-	 */
+	
 	public String getCategoryId() {
 		return categoryId;
 	}

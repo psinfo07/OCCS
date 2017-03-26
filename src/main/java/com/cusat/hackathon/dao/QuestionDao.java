@@ -8,7 +8,6 @@ import com.cusat.hackathon.model.Question;
 public class QuestionDao {
 			public List<Question> getQuestionById(){
 				List<Question> questions= new ArrayList<Question>();	
-				
 				return questions;
 				
 			}

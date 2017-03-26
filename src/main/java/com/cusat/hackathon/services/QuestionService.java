@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.cusat.hackathon.model.Question;
 
-public interface QuestionService {
+public interface QuestionService {//Question services
 	List<Question> getQuestionById();
 }

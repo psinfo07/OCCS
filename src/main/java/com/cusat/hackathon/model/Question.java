@@ -7,9 +7,7 @@ public class Question {
 	private String option3;
 	private String option4;
 	private String answer;
-	/**
-	 * @return the sectorCode
-	 */
+	
 	public String getSectorCode() {
 		return sectorCode;
 	}
