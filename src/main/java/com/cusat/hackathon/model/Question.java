@@ -2,6 +2,8 @@ package com.cusat.hackathon.model;
 
 public class Question {
 	private String sectorCode;
+	private String question;
+	
 	private String option1;
 	private String option2;
 	private String option3;
@@ -76,6 +78,18 @@ public class Question {
 	 */
 	public void setAnswer(String answer) {
 		this.answer = answer;
+	}
+	/**
+	 * @return the question
+	 */
+	public String getQuestion() {
+		return question;
+	}
+	/**
+	 * @param question the question to set
+	 */
+	public void setQuestion(String question) {
+		this.question = question;
 	}
 	
 }

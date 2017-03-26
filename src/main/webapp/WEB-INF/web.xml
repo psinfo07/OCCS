@@ -34,6 +34,10 @@
 		<servlet-name>UpdateUserDetails</servlet-name>
 		<url-pattern>/update_user_details</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestAction</servlet-name>
+		<url-pattern>/test_action</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -100,6 +104,13 @@
   	<display-name>UpdateUserDetails</display-name>
   	<servlet-name>UpdateUserDetails</servlet-name>
   	<servlet-class>com.cusat.hackathon.servlets.UpdateUserDetails</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TestAction</display-name>
+  	<servlet-name>TestAction</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.TestAction</servlet-class>
   </servlet>
 <!--  -->
 </web-app>

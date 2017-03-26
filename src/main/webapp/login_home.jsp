@@ -7,7 +7,7 @@
 </c:if>
 <section id="content">
 
-	<div class="container">
+	<div class="container myScrolling">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="text-center">
@@ -45,9 +45,9 @@
 						<div class="box">
 							<div class="aligncenter">								
 								<div class="icon">
-									<a href="#" class="btn btn-defaylt" role="button" onclick="document.getElementById('test').style.display='block';document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('result').style.display='none'"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></a>
+									<a href="#" class="btn btn-defaylt" role="button" id="questionId" onclick="document.getElementById('test').style.display='block';document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('result').style.display='none';"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></a>
 								</div>
-								<h4 style=" color:gray"><b>TEST</b></h4>
+								<h4 style=" color:blue"><b>TEST</b></h4>
 							</div>
 						</div>
 					</div>
@@ -138,7 +138,7 @@ $("#qform4").submit(function(){
 $.post('sqdform4', $("#qform4").serialize(),
 		function( data ) {
 				if(data=="SUCCESS"){
-					document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'
+					document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none';
 				}else{
 					//$("#failuremsg").text("Invalid UserName/Password !!!");
 				}
@@ -148,4 +148,29 @@ return false;
 
 });
 
+$("#questionId").click(function(){
+	$.post('test_action',
+			function( data ) {
+					//if(data=="SUCCESS"){
+				$.each(obj, function(key, value) {
+					sum += value;
+					$('#qid').val('data.question');
+				});
+			
+			document.getElementById('test').style.display = 'block';
+			document.getElementById('personalDetails').style.display = 'none';
+			document.getElementById('qualInfo').style.display = 'none';
+			document.getElementById('result').style.display = 'none';
+			/* }else{
+				//$("#failuremsg").text("Invalid UserName/Password !!!");
+			} */
+
+		});
+		return false;
+	});
+
+	/* function getQuestion(){
+	
+	 alert('hi');
+	 } */
 </script>
