@@ -1,4 +1,4 @@
-<!-- <Research/MPHIL/ etc Equivalent details form> -->
+<!-- <Research/MPHIL/ Equivalent details form> -->
 
 	<div id="qualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>

@@ -17,7 +17,7 @@ import com.cusat.hackathon.services.UserService;
 import com.cusat.hackathon.services.UserServiceImpl;
 
 /**
- * Servlet implementation class SaveQualificationform1
+ * Servlet implementation class SaveQualificationform1 updated
  */
 public class SaveQualificationform1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
