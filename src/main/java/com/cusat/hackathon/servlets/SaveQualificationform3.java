@@ -75,7 +75,7 @@ public class SaveQualificationform3 extends HttpServlet {
 		user.setEduDetail(eduDetails); 
 		
 		UserService userService = new UserServiceImpl();
-		boolean flag=userService.saveEduDetails(user);
+		boolean flag=userService.saveEduDetails3(user);
 		if(flag){
 			pw.print("SUCCESS");
 		}else{

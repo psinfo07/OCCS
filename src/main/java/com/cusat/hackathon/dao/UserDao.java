@@ -333,7 +333,7 @@ public class UserDao {
 	   return success;
    }
 
-public boolean saveEduDetails(User user) {
+public boolean saveEduDetails3(User user) {
 	Connection con = DatabaseConnection.getConnectivity();
 	String query="insert into edu_detail(userid,program,institute,duration,pyear,marks,cgpa) values(?,?,?,?,?,?,?)";
 	int[] i=new int[0];
@@ -367,7 +367,75 @@ public boolean saveEduDetails(User user) {
 	return success;
 }
 
-public boolean saveQualificationform4(User user) {
+public boolean saveEduDetails1(User user) {
+	Connection con = DatabaseConnection.getConnectivity();
+	String query="insert into edu_detail(userid,program,institute,duration,pyear,marks,cgpa) values(?,?,?,?,?,?,?)";
+	int[] i=new int[0];
+	boolean success=false;
+	try
+	{
+		PreparedStatement ps=con.prepareStatement(query);
+		for(EduDetail edu:user.getEduDetail()){
+			ps.setString(1, edu.getUserid());
+			ps.setString(2, edu.getProgram());
+			ps.setString(3, edu.getInstitute());
+			ps.setString(4, edu.getDuration());
+			ps.setString(5, edu.getPyear());
+			ps.setDouble(6,edu.getMarks());
+			ps.setString(7,edu.getCgpa());
+			
+			ps.addBatch();
+		}
+        i=ps.executeBatch(); 
+        if(i.length>0){
+        	success=true;
+        }
+	}
+	catch(SQLException ex)
+	{
+		success=false;
+	}
+	
+	
+	
+	return success;
+}
+
+
+public boolean saveEduDetails2(User user) {
+	Connection con = DatabaseConnection.getConnectivity();
+	String query="insert into edu_detail(userid,program,institute,duration,pyear,marks,cgpa) values(?,?,?,?,?,?,?)";
+	int[] i=new int[0];
+	boolean success=false;
+	try
+	{
+		PreparedStatement ps=con.prepareStatement(query);
+		for(EduDetail edu:user.getEduDetail()){
+			ps.setString(1, edu.getUserid());
+			ps.setString(2, edu.getProgram());
+			ps.setString(3, edu.getInstitute());
+			ps.setString(4, edu.getDuration());
+			ps.setString(5, edu.getPyear());
+			ps.setDouble(6,edu.getMarks());
+			ps.setString(7,edu.getCgpa());
+			
+			ps.addBatch();
+		}
+        i=ps.executeBatch(); 
+        if(i.length>0){
+        	success=true;
+        }
+	}
+	catch(SQLException ex)
+	{
+		success=false;
+	}
+	
+	
+	return success;
+}
+
+public boolean saveEduDetails4(User user) {
 	Connection con  = DatabaseConnection.getConnectivity();
 	boolean s1 = certificationVal(con,user);
 	boolean s2 = foiVal(con,user);
@@ -417,24 +485,6 @@ public boolean foiVal(Connection con, User user) {
 	}catch (SQLException e) {
 		success = false;
 	}
-//   int[] i=new int[0];
-//   try {
-//	PreparedStatement ps=con.prepareStatement(query);
-//		ps.setString(1,fil.getUserId());
-//		ps.setString(2,fil.getfOInterest1());
-//		ps.setString(3,fil.getfOInterest2());
-//		ps.setString(4,fil.getfOInterest3());
-//		ps.setString(5,fil.getfOInterest4());
-//		ps.addBatch();
-//	}
-//	
-//	i=ps.executeBatch();
-//	if(i.length>0){
-//		success=true;
-//	}
-//} catch (SQLException e) {
-//	success=false;
-//}
 	return success;
 }
 

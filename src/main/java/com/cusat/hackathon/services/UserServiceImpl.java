@@ -35,21 +35,21 @@ public class UserServiceImpl implements UserService {
 		return userDao.updateUserDetails(user);
 	}
 
-public boolean saveEduDetails(User user) {
+public boolean saveEduDetails3(User user) {
 	
-	return userDao.saveEduDetails(user);
+	return userDao.saveEduDetails3(user);
 }
 
-public boolean saveQualificationform4(User user){
-    return userDao.saveQualificationform4(user);
+public boolean saveEduDetails4(User user){
+    return userDao.saveEduDetails4(user);
 }
 
-public boolean saveQualificationform2(User user) {
-	// TODO Auto-generated method stub
-	return false;
+public boolean saveEduDetails2(User user) {
+	return userDao.saveEduDetails2(user);
 }
 
-
- 
+public boolean saveEduDetails1(User user) {
+	return userDao.saveEduDetails1(user);
+}
 
 }

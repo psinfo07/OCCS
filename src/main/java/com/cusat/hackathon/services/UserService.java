@@ -8,7 +8,8 @@ public interface UserService {
 		public User userLogin(User user);
 		
 		public boolean updateUserDetails(User user);
-		public boolean saveEduDetails(User user);
-		public boolean saveQualificationform4(User user);  
-		public boolean saveQualificationform2(User user);  
+		public boolean saveEduDetails3(User user);
+		public boolean saveEduDetails4(User user);  
+		public boolean saveEduDetails2(User user);
+		public boolean saveEduDetails1(User user);
 }

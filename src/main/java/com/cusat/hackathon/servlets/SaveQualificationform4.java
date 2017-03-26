@@ -79,7 +79,7 @@ public class SaveQualificationform4 extends HttpServlet {
 		 f1.setfOInterest4(foi4);
 		 user.setFieldOfInterest(f1);
 	    UserService userService=new UserServiceImpl();
-	    boolean flag1=userService.saveQualificationform4(user);
+	    boolean flag1=userService.saveEduDetails4(user);
 	    if(flag1){
 			request.setAttribute("key", "Details Updated successfully"); 
 			request.getRequestDispatcher("login_home.jsp").forward(request, response);
