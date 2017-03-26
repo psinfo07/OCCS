@@ -43,7 +43,7 @@
                         <li class="dropdown active">
 							<a href="index.jsp" class="dropdown-toggle "  data-delay="0" data-close-others="false">Home </i></a>
 						</li>
-                        <li class="dropdown">
+                       <!--  <li class="dropdown">
                             <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Features <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="typography.html">Typography</a></li>
@@ -63,8 +63,8 @@
 									</ul>	
 								</li>
                             </ul>
-                        </li>
-                        <li><a href="portfolio.html">PROFILE</a></li>
+                        </li> -->
+                       <!--  <li><a href="portfolio.html">PROFILE</a></li> -->
                         <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">INSTITUTES <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
                                 <li><a href="https://www.careerguide.com/institutes/engineering-colleges-of-india"  target="_blank">ENGINEERING COLLEGES</a></li>
@@ -74,6 +74,7 @@
                             </ul>
 						</li>
                         <li><a href="contact.jsp">Contact</a></li>
+                        <li><a href="about.jsp">About</a></li>
                     </ul>
                 </div>
             </div>

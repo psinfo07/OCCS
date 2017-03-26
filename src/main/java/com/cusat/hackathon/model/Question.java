@@ -1,6 +1,6 @@
 package com.cusat.hackathon.model;
 
-public class question {
+public class Question {
 	private String sectorCode;
 	private String option1;
 	private String option2;

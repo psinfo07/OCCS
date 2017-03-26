@@ -1,6 +1,6 @@
 package com.cusat.hackathon.model;
 
-public class qualification {
+public class Qualification {
 	private String categoryId;
 	private String categoryName;
 	/**
