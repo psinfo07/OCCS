@@ -82,10 +82,6 @@ public class UpdateUserDetails extends HttpServlet {
 			request.setAttribute("key", "Details Updated successfully"); 
 			request.getRequestDispatcher("login_home.jsp").forward(request, response);
 		}
-		
-		
-		
-		
 	}
 
 }

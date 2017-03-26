@@ -33,7 +33,7 @@
     			
     			<div class="form-group">
       				<label for="pgProgram">Program Code(Postgraduate):</label>
-      				<input type="text" class="form-control" name="pgProgram" maxlength="15" placeholder="Programme Code">
+      				<input type="text" class="form-control" name="pgProgramme" maxlength="15" placeholder="Programme Code">
     			</div>
     			<div class="form-group">
       				<label for="pgInstitute">Institute Name:</label>
