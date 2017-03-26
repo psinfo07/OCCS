@@ -5,7 +5,7 @@
 
 <div id="wrapper">
 	<!-- start header -->
-	<jsp:include page="header.jsp" />
+	<jsp:include page="header_login.jsp" />
 	<!-- end header -->
 	<section id="featured" class="bg">
 	</section>
