@@ -10,8 +10,8 @@ public class QuestionServiceImpl implements QuestionService{
 	/**
 	 * 
 	 */
-	public List<Question> getQuestionById() {
-		return questionDao.getQuestionById();
+	public List<Question> getQuestionById(String userid) {
+		return questionDao.getQuestionById(userid);
 	}
 
 }

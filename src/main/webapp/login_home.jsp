@@ -146,15 +146,18 @@ $.post('sqdform4', $("#qform4").serialize(),
 });
 return false;
 
-});
+}); 
 
 $("#questionId").click(function(){
 	$.post('test_action',
-			function( data ) {
-					//if(data=="SUCCESS"){
-				$.each(obj, function(key, value) {
-					sum += value;
-					$('#qid').val('data.question');
+			function( data ){debugger;
+					//if(data != null){
+						
+				alert(data);
+				
+				$.each(data, function(key, value) {
+					
+					$('#qid').val('obj.question');
 				});
 			
 			document.getElementById('test').style.display = 'block';
