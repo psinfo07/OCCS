@@ -79,5 +79,112 @@
                 </div>
             </div>
         </div>
-	</header>
+        
+        
+        <!-- <SignUp PopUp> -->
+	
+	<div class="modal fade" id="signUp" role="dialog">
+		<div class="modal-dialog">    
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="color:green">
+						<span class="glyphicon glyphicon-user" style="color:green"></span> Sign Up
+					</h4>
+				</div>
+				<div class="modal-body" style="color:green">          		  
+					<form action="create_user" autocomplete="off" method="post"  id="regForm">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" name="name" id="name" maxlength="30" placeholder="Enter Name" required="required">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" name="email" id="email" maxlength="30" placeholder="Enter email" required="required">
+						</div>
+						<div class="form-group">
+							<label for="pwd">Password:</label>
+							<input type="password" class="form-control" name="password" id="pwd" maxlength="15" placeholder="Enter password" required="required">
+						</div>
+						<div class="form-group">
+							<label for="cpwd">Confirm Password:</label>
+							<input type="password" class="form-control" name="cpassword" id="cpwd" maxlength="15" placeholder="Confirm password"required="required">
+						</div>
+						<div class="form-group">
+						<label for="edubox">Select Highest Education:</label>
+							<select name="hqualification" class="form-control">
+							<option value="INVAL">-- Highest Qualification -- </option>
+							<option value="catid01"> Working Professional </option>
+							<option value="catid02"> Post Graduate </option>
+							<option value="catid03"> Graduate/Diploma </option>
+							<option value="catid04"> XIIth Grade </option>
+							<option value="catid05"> Xth Grade </option>
+							<option value="catid06"> Other </option>
+							</select>
+							<!-- <input type="text" class="form-control" id="hEducation" placeholder="Enter Higher Education"> -->
+						</div>
+						<!--div class="checkbox">
+							<label><input type="checkbox"> Remember me</label>
+						</div-->
+						<input type="submit" class="btn btn-default" value="Register" /> 
+					</form>	  
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <Login PopUp> -->
+	
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">    
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="color:green">
+						<span class="glyphicon glyphicon-log-in" style="color:green"></span> Login
+						<span id="failuremsg" style="color:red"></span>
+					</h4>
+				</div>
+				<div class="modal-body" style="color:green">          		  
+					<form action="#"  autocomplete="off"  method="post" id="loginForm">  
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="pwd">Password:</label>
+							<input type="password" class="form-control"  name="password" id="pwd" placeholder="Enter password">
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox">Remember me</label>
+						</div>
+						<input type="submit" class="btn btn-default" value="Submit" />
+					</form>	 
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+<script>
+$("#loginForm").submit(function(){debugger;
+		$.post('user_login', $("#loginForm").serialize(),
+				function( data ) {
+						if(data=="SUCCESS"){
+							window.location.href="login_home.jsp";
+						}else{
+							$("#failuremsg").text("Invalid UserName/Password !!!");
+						}
+							
+		});
+	return false;
+	
+});
+</script>
+
+</header>
 	

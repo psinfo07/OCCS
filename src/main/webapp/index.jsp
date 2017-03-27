@@ -402,9 +402,9 @@ There are no wrong answers to any of the questionnaire.</p>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
-<div class="modal fade" id="myModal" role="dialog">
+<!-- <div class="modal fade" id="myModal" role="dialog">
 		<div class="modal-dialog">    
-			<!-- Modal content-->
+			Modal content
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -433,13 +433,13 @@ There are no wrong answers to any of the questionnaire.</p>
 			</div>
 		</div>
 	</div>
-
+ -->
 <!--SignUp PopUp Menu-->
 <!-- Modal -->
 	<!-- Modal -->
-	<div class="modal fade" id="signUp" role="dialog">
+	<!-- <div class="modal fade" id="signUp" role="dialog">
 		<div class="modal-dialog">    
-			<!-- Modal content-->
+			Modal content
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -476,11 +476,11 @@ There are no wrong answers to any of the questionnaire.</p>
 							<option value="catid05"> Xth Grade </option>
 							<option value="catid06"> Other </option>
 							</select>
-							<!-- <input type="text" class="form-control" id="hEducation" placeholder="Enter Higher Education"> -->
+							<input type="text" class="form-control" id="hEducation" placeholder="Enter Higher Education">
 						</div>
-						<!--div class="checkbox">
+						div class="checkbox">
 							<label><input type="checkbox"> Remember me</label>
-						</div-->
+						</div
 						<input type="submit" class="btn btn-default" value="Register" /> 
 					</form>	  
 				</div>
@@ -488,7 +488,7 @@ There are no wrong answers to any of the questionnaire.</p>
 			</div>
 		</div>
 	</div>
-
+ -->
 </body>
 <!-- nothing -->
 <script>
