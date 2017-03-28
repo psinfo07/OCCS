@@ -35,8 +35,7 @@ public class QuestionDao {
 						 foi2=rs.getString(2);
 						 foi3=rs.getString(3);
 						 foi4=rs.getString(4);
-					}
-					
+					}					
 					ps2.setString(1,foi1);
 					ps2.setString(2,foi2);
 					ps2.setString(3,foi3);
@@ -45,7 +44,8 @@ public class QuestionDao {
 					ResultSet rs2=ps2.executeQuery();					
 					while(rs2.next()){
 						Question question= new Question();	
-						String str1=rs2.getString(2);
+						//String str1=rs2.getString(2);
+						question.setSectorCode(rs2.getString(1));
 						question.setQuestion(rs2.getString(2));
 						question.setOption1(rs2.getString(3));
 						question.setOption2(rs2.getString(4));

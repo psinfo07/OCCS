@@ -45,7 +45,11 @@
 						<div class="box">
 							<div class="aligncenter">								
 								<div class="icon">
-									<a href="#" class="btn btn-defaylt" role="button" id="questionId" onclick="document.getElementById('test').style.display='block';document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('result').style.display='none';"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></a>
+								<form action="test_action" method="post">
+									<!-- <a href="#" class="btn btn-defaylt" role="button" id="questionId" onclick="document.getElementById('test').style.display='block';document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('result').style.display='none';"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></a> -->
+								
+									<input type="submit" class="btn btn-defaylt"> 
+								</form>
 								</div>
 								<h4 style=" color:blue"><b>TEST</b></h4>
 							</div>
@@ -148,7 +152,7 @@ return false;
 
 }); 
 
-$("#questionId").click(function(){
+/* $("#questionId").click(function(){
 	$.post('test_action',
 			function( data ){debugger;
 					//if(data != null){
@@ -171,7 +175,7 @@ $("#questionId").click(function(){
 		});
 		return false;
 	});
-
+ */
 	/* function getQuestion(){
 	
 	 alert('hi');

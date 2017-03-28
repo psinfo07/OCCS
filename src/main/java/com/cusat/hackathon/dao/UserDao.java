@@ -488,4 +488,88 @@ public boolean foiVal(Connection con, User user) {
 	return success;
 }
 
+public boolean saveUserScore(User user,String email,String foi,int score){
+	boolean success=false;
+	String scoreOfFoi="";
+	String query="";
+	Connection con= DatabaseConnection.getConnectivity();
+	scoreOfFoi=getFoi(con,email,foi);
+	
+	if(getScoreByFoi(email,con)){
+		
+		query="update result set " +scoreOfFoi+" = "+scoreOfFoi+" +  ? where userid=? ";
+	}
+	else{
+		query="insert into result("+scoreOfFoi+", userid ) values(?,?)";
+	}
+	
+	try {
+		PreparedStatement ps=con.prepareStatement(query);
+		ps.setInt(1, score);
+		ps.setString(2, email);
+		int i=ps.executeUpdate();
+		if(i>0){
+			success=true;
+		}
+	} catch (SQLException e) {
+		success=false;
+	}
+	
+	return success;
+	
+}
+
+private boolean getScoreByFoi( String email,Connection con) {
+	String query="select * from result where userid =?";
+	boolean success=false;
+	try {
+		PreparedStatement ps = con.prepareStatement(query);
+		ps.setString(1, email);
+		ResultSet rs=ps.executeQuery();
+		if(rs.next()){
+			success=true;
+		}
+	} catch (SQLException e) {
+		success=false;
+	}
+	
+	return success;
+	
+}
+private String getFoi(Connection con, String email,String foi){
+	String query="select * from foi where userid=? ";
+	String scoreOfFoi="";
+	try {
+		PreparedStatement ps=con.prepareStatement(query);
+		ps.setString(1,email);
+		String foi1="";
+		String foi2="";
+		String foi3="";
+		ResultSet rs=ps.executeQuery();
+		while(rs.next()){
+			foi1=rs.getString(2);
+			foi2=rs.getString(3);
+			foi3=rs.getString(4);
+		}
+	
+		if(foi1.equals(foi)){
+			scoreOfFoi="scorefoi1";
+		}else if(foi2.equals(foi)){
+			scoreOfFoi="scorefoi2";
+		}else if(foi3.equals(foi)){
+			scoreOfFoi="scorefoi3";
+		}else{
+			scoreOfFoi="scorefoi4";
+		}
+
+		
+		
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return scoreOfFoi;
+	
+}
+
 }
