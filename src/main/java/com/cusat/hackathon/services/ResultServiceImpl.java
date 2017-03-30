@@ -6,9 +6,7 @@ import com.cusat.hackathon.model.User;
 
 public class ResultServiceImpl  implements ResultService{
 	
-	/**
-	 * 
-	 */
+	
 	ResultDao resultDao=new ResultDao();
 	public Result fetchResult(User user) {		
 		return resultDao.fetchResult(user);

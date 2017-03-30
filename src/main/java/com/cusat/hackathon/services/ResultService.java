@@ -5,10 +5,6 @@ import com.cusat.hackathon.model.User;
 
 public interface ResultService {
 
-	/**
-	 * 
-	 * @param user
-	 * @return
-	 */
+	
 	public Result fetchResult(User user);
 }

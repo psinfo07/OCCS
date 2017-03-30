@@ -37,9 +37,7 @@ public class Result {
 	public int getScoreFoi1() {
 		return scoreFoi1;
 	}
-	/**
-	 * @param scoreFoi1 the scoreFoi1 to set
-	 */
+	
 	public void setScoreFoi1(int scoreFoi1) {
 		this.scoreFoi1 = scoreFoi1;
 	}
