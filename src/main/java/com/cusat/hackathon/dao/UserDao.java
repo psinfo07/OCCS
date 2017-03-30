@@ -360,10 +360,7 @@ public boolean saveEduDetails3(User user) {
 	catch(SQLException ex)
 	{
 		success=false;
-	}
-	
-	
-	
+	}	
 	return success;
 }
 

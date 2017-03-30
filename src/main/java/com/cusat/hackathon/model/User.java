@@ -14,8 +14,6 @@ public class User {
 		
 		
 		
-		
-		
 		public Set<EduDetail> getEduDetail() {
 			return eduDetail;
 		}
