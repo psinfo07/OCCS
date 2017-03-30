@@ -3,6 +3,8 @@
 	<jsp:include page="css_part.jsp" />
 <body>
 
+
+
 <div id="wrapper">
 	<!-- start header -->
 	<jsp:include page="header_login.jsp" />

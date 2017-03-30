@@ -80,7 +80,10 @@
 		</div>
 		</div> -->
 		
-<!-- <Personal Info Form> -->			
+<!-- <Personal Info Form> -->		
+
+
+	
 	<jsp:include page="personal_details.jsp" />
 		
 <!-- <Qualification Info Form> -->
