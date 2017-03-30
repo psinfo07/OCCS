@@ -21,10 +21,10 @@ public class ResultDao {
 			ps.setString(1,user.getPersonalDetail().getEmailId());
 			ResultSet rs=ps.executeQuery();
 			if(rs.next()){
-				result.setScoreFoi1(rs.getInt(3));
-				result.setScoreFoi2(rs.getInt(4));
-				result.setScoreFoi3(rs.getInt(5));
-				result.setScoreFoi4(rs.getInt(6));				
+				result.setScoreFoi1(rs.getInt("scorefoi1"));
+				result.setScoreFoi2(rs.getInt("scorefoi2"));
+				result.setScoreFoi3(rs.getInt("scorefoi3"));
+				result.setScoreFoi4(rs.getInt("scorefoi4"));				
 			}
 			else
 			{

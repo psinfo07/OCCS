@@ -51,7 +51,7 @@ public class TestAction extends HttpServlet {
 		if(lPageNo>80){
 			String result="abc";
 			request.setAttribute("result", result); 
-			request.getRequestDispatcher("result.jsp").forward(request, response);
+			request.getRequestDispatcher("login_home.jsp").forward(request, response);
 		}
 		HttpSession session = request.getSession(true);
 		User currentUser=(User) session.getAttribute("user");

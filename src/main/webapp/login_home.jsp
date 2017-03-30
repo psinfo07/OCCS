@@ -5,6 +5,8 @@
     <c:redirect url="index.jsp"/>
     
 </c:if>
+
+
 <section id="content">
 
 	<div class="container myScrolling">
@@ -59,7 +61,13 @@
 						<div class="box">
 							<div class="aligncenter">								
 								<div class="icon">
-									<a href="#" class="btn btn-defaylt" role="button" onclick="document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block'"><i class="fa fa-cubes fa-5x" style="color:gray"></i></a>
+								<form action="result_action" method="post">
+									<!-- <a href="#" class="btn btn-defaylt" role="button" onclick="document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block'"><i class="fa fa-cubes fa-5x" style="color:gray"></i></a> -->
+								
+									<input type="submit" class="btn btn-defaylt"> 
+								</form>
+									
+									
 								</div>
 								<h4 style="color:gray"><b>Result</b></h4>
 							</div>
@@ -155,32 +163,22 @@ return false;
 
 }); 
 
-/* $("#questionId").click(function(){
-	$.post('test_action',
-			function( data ){debugger;
-					//if(data != null){
-						
-				alert(data);
-				
-				$.each(data, function(key, value) {
-					
-					$('#qid').val('obj.question');
-				});
+/* $("#result_id").click(function(){
+	$.post('result_action',
+			function( data="SUCCESS" ){debugger;
+			document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block';	
+			alert(data);
 			
-			document.getElementById('test').style.display = 'block';
-			document.getElementById('personalDetails').style.display = 'none';
-			document.getElementById('qualInfo').style.display = 'none';
-			document.getElementById('result').style.display = 'none';
-			/* }else{
-				//$("#failuremsg").text("Invalid UserName/Password !!!");
-			} */
-
 		});
 		return false;
 	});
- */
-	/* function getQuestion(){
+  */
 	
-	 alert('hi');
-	 } */
 </script>
+
+<c:if test="${!empty scoreFoi1}">
+   <script>
+   document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block';
+   </script>
+    
+</c:if>
