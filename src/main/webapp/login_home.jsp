@@ -51,7 +51,7 @@
 									<input type="submit" class="btn btn-defaylt"> 
 								</form>
 								</div>
-								<h4 style=" color:blue"><b>TEST</b></h4>
+								<h4 style=" color:gray"><b>TEST</b></h4>
 							</div>
 						</div>
 					</div>
