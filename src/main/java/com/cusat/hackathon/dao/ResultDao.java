@@ -11,6 +11,11 @@ import com.cusat.hackathon.model.User;
 
 public class ResultDao {
 
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 */
 	public Result fetchResult(User user) {		
 		String query="select scorefoi1,scorefoi2,scorefoi3,scorefoi4 from result where userid=?";
 		Connection con=DatabaseConnection.getConnectivity();

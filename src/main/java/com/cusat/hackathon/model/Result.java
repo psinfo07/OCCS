@@ -34,9 +34,6 @@ public class Result {
 	public void setScore(int score) {
 		this.score = score;
 	}
-	/**
-	 * @return the scoreFoi1
-	 */
 	public int getScoreFoi1() {
 		return scoreFoi1;
 	}

@@ -13,9 +13,6 @@ import com.cusat.hackathon.model.User;
 import com.cusat.hackathon.services.ResultService;
 import com.cusat.hackathon.services.ResultServiceImpl;
 
-/**
- * Servlet implementation class ResultAction
- */
 
 public class ResultAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;

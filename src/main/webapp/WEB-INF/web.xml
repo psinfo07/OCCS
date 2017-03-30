@@ -38,6 +38,10 @@
 		<servlet-name>TestAction</servlet-name>
 		<url-pattern>/test_action</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResultAction</servlet-name>
+		<url-pattern>/result_action</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -122,6 +126,13 @@
   	<display-name>TestAction</display-name>
   	<servlet-name>TestAction</servlet-name>
   	<servlet-class>com.cusat.hackathon.servlets.TestAction</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ResultAction</display-name>
+  	<servlet-name>ResultAction</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.ResultAction</servlet-class>
   </servlet>
   
   <error-page>
