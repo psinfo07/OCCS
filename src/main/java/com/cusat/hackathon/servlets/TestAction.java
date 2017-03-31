@@ -49,7 +49,7 @@ public class TestAction extends HttpServlet {
 			lPageNo+=size;
 		}
 		if(lPageNo>80){
-			String result="abc";
+			String result="Page ";
 			request.setAttribute("result", result); 
 			request.getRequestDispatcher("login_home.jsp").forward(request, response);
 		}
