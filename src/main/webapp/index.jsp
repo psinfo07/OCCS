@@ -74,7 +74,7 @@
 			<div class="col-lg-12">
 				<div class="row">
 					<div class="col-sm-6 col-lg-6">
-						<center><h4>About our software...</h4></center>
+						<center><h4>ABOUT OUR SOFTWARE...</h4></center>
 						<p><strong>This software tool is able to counsel based on the academic track records , Interests , hobbies and other 
 achievements in extra curricular activities. After consolidating all the relevant inputs the software is able to identify. 
 the hidden potential of the candidate and advice accordingly.</strong></p>
