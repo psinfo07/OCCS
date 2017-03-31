@@ -4,6 +4,7 @@ import com.sun.jmx.snmp.Timestamp;
 
 public class Result {
      private String userId;
+     private String maxMarks;
      private int score;
      private int scoreFoi1;
      private int scoreFoi2;
@@ -14,15 +15,10 @@ public class Result {
      private String sub3;
      private String sub4;
      private String collegeNames;
-     /**
-	 * @return the sub1
-	 */
 	public String getSub1() {
 		return sub1;
 	}
-	/**
-	 * @param sub1 the sub1 to set
-	 */
+	
 	public void setSub1(String sub1) {
 		this.sub1 = sub1;
 	}
@@ -39,7 +35,8 @@ public class Result {
 		this.sub2 = sub2;
 	}
 	/**
-	 * @return the sub3
+	 * 
+	 * @return
 	 */
 	public String getSub3() {
 		return sub3;
@@ -156,4 +153,17 @@ public class Result {
 	public void setLastUpdatets(Timestamp lastUpdatets) {
 		this.lastUpdatets = lastUpdatets;
 	}
+	/**
+	 * @return the maxMarks
+	 */
+	public String getMaxMarks() {
+		return maxMarks;
+	}
+	/**
+	 * @param maxMarks the maxMarks to set
+	 */
+	public void setMaxMarks(String maxMarks) {
+		this.maxMarks = maxMarks;
+	}
+	
 }

@@ -11,6 +11,11 @@ import com.cusat.hackathon.model.User;
 
 public class ResultDao {
 
+	/**
+	 * 
+	 * @param user
+	 * @return
+	 */
 	public Result fetchResult(User user) {		
 		String query="select scorefoi1,scorefoi2,scorefoi3,scorefoi4 from result where userid=?";
 		Connection con=DatabaseConnection.getConnectivity();
@@ -46,6 +51,7 @@ public class ResultDao {
 				result.setSub2(fetchSubjectNames(user,"foi2"));
 				result.setSub3(fetchSubjectNames(user,"foi3"));
 				result.setSub4(fetchSubjectNames(user,"foi4"));
+				result.setMaxMarks(fetchSubjectNames(user, str));
 				
 			}
 			else
@@ -63,12 +69,14 @@ public class ResultDao {
 		String collegeNames="";
 		Connection con=DatabaseConnection.getConnectivity();		
 		try {
+			int i = 1;
 				PreparedStatement ps = con.prepareStatement(query);
 				ps.setString(1,user.getPersonalDetail().getEmailId());
 				ResultSet rs=ps.executeQuery();
 				while(rs.next())
 				{
-					collegeNames+=rs.getString("college")+"\n";
+					collegeNames+=" \n("+ i+").  "+rs.getString("college")+".";
+					i++;
 				}
 		} catch (SQLException e) {			
 			e.printStackTrace();

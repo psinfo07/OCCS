@@ -16,12 +16,15 @@ import com.cusat.hackathon.services.ResultServiceImpl;
 
 /**
  * 
- * @author Raju
+ * @author PRAKASH
  *
  */
 public class ResultAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	/**
+	 * 
+	 */
    	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
    		PrintWriter pw=response.getWriter();
 		Result result=new Result();
@@ -51,10 +54,12 @@ public class ResultAction extends HttpServlet {
 				
 		String collegeNames = result.getCollegeNames();
 		request.setAttribute("collegeNames",collegeNames);
+		request.setAttribute("maxMarks",result.getMaxMarks());
 		//request.setAttribute(, o);
 		request.getRequestDispatcher("login_home.jsp").forward(request, response);
 		
 		//pw.write(String.valueOf(scoreFoi1));
+		
 		
 		
 	}
