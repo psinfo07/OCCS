@@ -14,10 +14,16 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="row">
-		<center><p><font size="5"><b>About</b></font></p></center>
-			<center><p><font size="2"><b>About not updated yet...</b></font></p></center>
-			<center><p><font size="2"><b>Please Wait & Connect With us</b></font></p></center>
 
+		<center><p><font size="5"><b>...About our project...</b></font></p></center>
+		<center><p><strong>This software tool is able to counsel based on the academic track records , Interests , hobbies and other 
+achievements in extra curricular activities. After consolidating all the relevant inputs the software is able to identify. 
+the hidden potential of the candidate and advice accordingly.</strong></p></center>
+		<center><p>For many, a main goal in life is to pursue a career that is meaningful and fulfilling. It can be highly rewarding to be in a role that people are passionate about and that reflects themself  as a person - where they can apply their skills and talents while growing at the same time.</p></center>
+		<center><p>Unfortunately not everyone ends up in such a role, and many people are in jobs that make them feel bored, unmotivated and frustrated. With the average people spending such a significant amount of time at work (over 40 hours per week) not enjoying their  job means for a large proportion of their life they will be both unfulfilled and unhappy.</p></center>
+		<center><p>Resolving their career issues however can be a difficult process. Many people are clueless as to what job would satisfy them and feel stuck in a rut, while some desire change but feel unable to leave their current role. Others may be struggling with a personal issue or problem at work that is preventing them from enjoying their job and performing at their best.</p></center>
+		<center><p>If the clients are one of these people, they could benefit from career help, guidance and support in the form this online career counseling software.</p></center>			
+ 
 							</div>
 						</div>
 				</div>	
