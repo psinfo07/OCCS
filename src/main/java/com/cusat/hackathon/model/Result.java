@@ -9,7 +9,74 @@ public class Result {
      private int scoreFoi2;
      private int scoreFoi3;
      private int scoreFoi4;
-     private Timestamp lastUpdatets;
+     private String sub1;
+     private String sub2;
+     private String sub3;
+     private String sub4;
+     private String collegeNames;
+     /**
+	 * @return the sub1
+	 */
+	public String getSub1() {
+		return sub1;
+	}
+	/**
+	 * @param sub1 the sub1 to set
+	 */
+	public void setSub1(String sub1) {
+		this.sub1 = sub1;
+	}
+	/**
+	 * @return the sub2
+	 */
+	public String getSub2() {
+		return sub2;
+	}
+	/**
+	 * @param sub2 the sub2 to set
+	 */
+	public void setSub2(String sub2) {
+		this.sub2 = sub2;
+	}
+	/**
+	 * @return the sub3
+	 */
+	public String getSub3() {
+		return sub3;
+	}
+	/**
+	 * @param sub3 the sub3 to set
+	 */
+	public void setSub3(String sub3) {
+		this.sub3 = sub3;
+	}
+	/**
+	 * @return the sub4
+	 */
+	public String getSub4() {
+		return sub4;
+	}
+	/**
+	 * @param sub4 the sub4 to set
+	 */
+	public void setSub4(String sub4) {
+		this.sub4 = sub4;
+	}
+	
+		
+     /**
+	 * @return the collegeNames
+	 */
+	public String getCollegeNames() {
+		return collegeNames;
+	}
+	/**
+	 * @param collegeNames the collegeNames to set
+	 */
+	public void setCollegeNames(String collegeNames) {
+		this.collegeNames = collegeNames;
+	}
+	private Timestamp lastUpdatets;
 	/**
 	 * @return the userId
 	 */

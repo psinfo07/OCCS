@@ -2,18 +2,50 @@
 
 <div id="result" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Result</h3>
-  			<form action="#" method="post" id="result_id">
+  			<form action="#" method="post" id="result_id">   			
+    			
+    			<div class="table-responsive">          
+  					<table class="table">
+    					<thead>
+      						<tr>        
+        						<th>Interested Field</th>
+        						<th>Marks</th>   
+      						</tr>
+    					</thead>
+    					<tbody>
+      						<tr>        
+					        	<td><c:out value="${lSub1}:" /></td>
+        						<td><c:out value="${scoreFoi1}" /></td>        
+      						</tr>
+      						<tr>        
+					        	<td><c:out value="${lSub2}:" /></td>
+        						<td><c:out value="${scoreFoi2}" /></td>        
+      						</tr>
+      						<tr>        
+					        	<td><c:out value="${lSub2}:" /></td>
+        						<td><c:out value="${scoreFoi2}" /></td>        
+      						</tr>
+      						<tr>        
+					        	<td><c:out value="${lSub3}:" /></td>
+        						<td><c:out value="${scoreFoi3}" /></td>        
+      						</tr>
+      						<tr>        
+					        	<td><c:out value="${lSub4}:" /></td>
+        						<td><c:out value="${scoreFoi4}" /></td>        
+      						</tr>      					
+    					</tbody>
+  					</table>
+  				</div>
+    			    <table class="table">
+    					<thead>
+      						<tr>        
+        						<th>So you can get admission in this college :</th>        						
+      						</tr>
+    					</thead>
+    					<tbody>			
     			<div class="form-group">
-      				<label for="email">Personality : </label><label><c:out value="${scoreFoi1}" /></label>      				
-    			</div>
-    			<div class="form-group">
-      				<label for="email">Aptitude : </label><label><c:out value="${scoreFoi2}" /></label>      				
-    			</div>
-    			<div class="form-group">
-      				<label for="email">Reasning : </label><label><c:out value="${scoreFoi3}" /></label>      				
-    			</div>
-    			<div class="form-group">
-      				<label for="email">Computer : </label><label><c:out value="${scoreFoi4}" /></label> 				
+      				<label for="email">So you can get admission in this college : </label>
+      				<label><c:out value="${collegeNames}" /></label>      				
     			</div>
     			<input type="submit" class="btn btn-default"  value="OK" />
   			</form>		
