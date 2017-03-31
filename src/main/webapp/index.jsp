@@ -74,17 +74,14 @@
 			<div class="col-lg-12">
 				<div class="row">
 					<div class="col-sm-6 col-lg-6">
-						<h4>About our company</h4>
-						<p><strong>Meliore inciderint qui ne. Suas cotidieque vel ut lobortis reformidans duo</strong></p>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit iste exercitationem praesentium deleniti nostrum laborum rem id nihil tempora. Adipisci ea commodi unde nam placeat cupiditate quasi a ducimus rem consequuntur ex eligendi minima voluptatem assumenda voluptas quidem sit maiores odio velit voluptate
-						</p>
-						<p>
-						Mel explicari adipiscing consectetuer no, no mel apeirian scripserit repudiandae, ad assum mundi scribentur eam. Graecis offendit phaedrum eu his, eius ferri quidam eos ad, quis delenit vel ei. Alia modus facete te eos, eu tation appellantur per
-						</p>
+						<center><h4>About our software...</h4></center>
+						<p><strong>This software tool is able to counsel based on the academic track records , Interests , hobbies and other 
+achievements in extra curricular activities. After consolidating all the relevant inputs the software is able to identify. 
+the hidden potential of the candidate and advice accordingly.</strong></p>
+						<p>For many, a main goal in life is to pursue a career that is meaningful and fulfilling. It can be highly rewarding to be in a role that people are passionate about and that reflects themself  as a person - where they can apply their skills and talents while growing at the same time.</p>
 					</div>
 					<div class="col-sm-6 col-lg-6">
-						<h4>WHAT IS A PSYCHOMETRIC CAREER ASSESSMENT?</h4>
+						<center><h4>WHAT IS A PSYCHOMETRIC CAREER ASSESSMENT?</h4></center>
 							<p>Psychometric assessments or career tests, as referred commonly, are standard scientific tests used to measure individual's mental capabilities, cognitive abilities & behavioral style.
 
 These tests are designed to measure your affinity for a course, stream or role based on the required personality characteristics and aptitude for the same.
@@ -114,18 +111,18 @@ There are no wrong answers to any of the questionnaire.</p>
 			<div class="col-lg-12">
 				<div class="row">
 					<div class="col-sm-6 col-md-6">
-					<h4>Testimonials</h4>
+					<center><h4>Testimonials</h4></center>
 						<div class="testimonialslide clearfix flexslider">
 							<ul class="slides">
 								<li><blockquote>
-								Usu ei porro deleniti similique, per no consetetur necessitatibus. Ut sed augue docendi alienum, ex oblique scaevola inciderint pri, unum movet cu cum. Et cum impedit epicuri
+								"Choose a job you love, and you will never have to work a day in your life."
 									</blockquote>
-									<h4>KESHAV SINGH <span>&#8213; Software Engineer</span></h4> 
+									<h4>CONFUCIUS<span>&#8213; Philosopher </span></h4> 
 								</li>
 								<li><blockquote>
-								Usu ei porro deleniti similique, per no consetetur necessitatibus. Ut sed augue docendi alienum, ex oblique scaevola inciderint pri, unum movet cu cum. Et cum impedit epicuri 
+								"Find out what you like doing best, and get someone to pay you for it."
 									</blockquote>
-									<h4> ALOK GUPTA <span>&#8213; Software Engineer</span></h4>
+									<h4>KATHARINE WHITEHORN <span>&#8213; Writer </span></h4>
 								</li>	
 							</ul>
 						</div>					
