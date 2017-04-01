@@ -127,6 +127,13 @@
 						<!--div class="checkbox">
 							<label><input type="checkbox"> Remember me</label>
 						</div-->
+						<div class="form-group">
+						<label for="radio">Looking For: </label>
+						</div>
+						<div>
+						<label><input type="radio" name="j">JOB     </label>
+					  <label><input type="radio" name="j">        Higher Education</label>
+						</div>
 						<input type="submit" class="btn btn-default" value="Register" /> 
 					</form>	  
 				</div>
