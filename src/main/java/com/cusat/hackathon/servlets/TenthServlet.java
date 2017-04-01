@@ -52,7 +52,7 @@ public class TenthServlet extends HttpServlet {
 		UserService userService = new UserServiceImpl();
 		boolean flag=userService.saveTenthDetail(user);
 		if(flag){
-			pw.print("SUCCESS");
+			response.sendRedirect("login_home.jsp");
 		}else{
 			pw.print("ERROR");
 		}

@@ -165,19 +165,22 @@ $.post('sqdform4', $("#qform4").serialize(),
 return false;
 
 }); 
+</script>
 
-  $("#tenthform").submit(function(){
-	$.post('tenth_servlet',
-			function( data="SUCCESS" ){debugger;
-			document.getElementById('tenthform').style.display='none';	
-			alert(data);
-			
-		});
+  <!-- <script>
+ $("#tenthform").submit(function(){
+	$.post('tenth_servlet',$("#tenthform").serialize(),
+			function( data ) {
+				if(data=="SUCCESS"){
+					document.getElementById('tenthform').style.display='none';	
+					alert(data);
+				}
+			});
 		return false;
 	}); 
-  
+ 
 	
-</script>
+ </script> -->
 
 <c:if test="${!empty scoreFoi1}">
    <script>
