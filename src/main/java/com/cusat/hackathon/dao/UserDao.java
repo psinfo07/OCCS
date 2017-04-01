@@ -340,13 +340,23 @@ public class UserDao {
    public boolean saveTenthDetail(User user){
 	   Connection con = DatabaseConnection.getConnectivity();
 		String query="insert into edu_detail(userid,program,institute,duration,pyear,marks,cgpa) values(?,?,?,?,?,?,?)";
+		String query1="insert into foi(userid,foi1,foi2,foi3,foi4) values(?,?,?,?,?)";
 		int[] i=new int[0];
+		int j=0;
 		boolean success=false;
 		try
 		{
 			PreparedStatement ps=con.prepareStatement(query);
+			PreparedStatement ps1=con.prepareStatement(query1);
+			
+			ps1.setString(2, "sub01");
+			ps1.setString(3, "sub02");
+			ps1.setString(4, "sub27");
+			ps1.setString(5, "sub28");
+			
 			for(EduDetail edu:user.getEduDetail()){
 				ps.setString(1, edu.getUserid());
+				ps1.setString(1, edu.getUserid());
 				ps.setString(2, edu.getProgram());
 				ps.setString(3, edu.getInstitute());
 				ps.setString(4, edu.getDuration());
@@ -356,7 +366,8 @@ public class UserDao {
 				ps.addBatch();
 			}
 	        i=ps.executeBatch(); 
-	        if(i.length>0){
+	        j=ps1.executeUpdate();
+	        if(i.length>0 && j>0){
 	        	success=true;
 	        }
 		}
