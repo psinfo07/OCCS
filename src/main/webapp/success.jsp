@@ -14,13 +14,8 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="row">
-				
-		<center><p><font size="5"><b>News</b></font></p></center>
-			<center><p><font size="2"><b>News not updated yet...</b></font></p></center>
-			<center><p><font size="2"><b>Please Wait & Connect With us</b></font></p></center>
-			
-			
-			
+	
+
   <section id="content">
 	<div class="container">
 		<div class="row">
