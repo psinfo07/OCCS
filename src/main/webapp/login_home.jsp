@@ -50,7 +50,8 @@
 								<form action="test_action" method="post">
 									<!-- <a href="#" class="btn btn-defaylt" role="button" id="questionId" onclick="document.getElementById('test').style.display='block';document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('result').style.display='none';"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></a> -->
 								   
-									<input type="submit" value="Test" class="btn btn-defaylt fa fa-paper-plane-o fa-5x"> 
+									<!-- <input type="submit" value="Test" class="btn btn-defaylt fa fa-paper-plane-o fa-5x"> --> 
+									<button type="submit" class="btn btn-defaylt" style="background-color: white"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></button>
 								</form>
 								</div>
 								<h4 style=" color:gray"><b>TEST</b></h4>
@@ -64,7 +65,8 @@
 								<form action="result_action" method="post">
 									<!-- <a href="#" class="btn btn-defaylt" role="button" onclick="document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block'"><i class="fa fa-cubes fa-5x" style="color:gray"></i></a> -->
 								
-									<input type="submit" value="Result" class="btn btn-defaylt fa fa-cubes fa-5x"> 
+									<!-- <input type="submit" value="Result" class="btn btn-defaylt fa fa-cubes fa-5x"> -->
+									<button type="submit" class="btn btn-defaylt" style="background-color: white"><i class="fa fa-cubes fa-5x" style="color:gray"></i></button>
 								</form>
 									
 									
