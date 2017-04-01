@@ -15,6 +15,7 @@ public interface UserService {
 		public boolean saveEduDetails4(User user);  
 		public boolean saveEduDetails2(User user);
 		public boolean saveEduDetails1(User user);
+		public boolean saveTenthDetail(User user);
 		public boolean saveUserScore(User user,String email,String foi,int score);
 		public boolean saveContact(String name, String email,String subject, String message);
 		public Set<EduDetail> getEduDetails(User user);

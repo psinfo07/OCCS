@@ -337,6 +337,35 @@ public class UserDao {
 	   return success;
    }
 
+   public boolean saveTenthDetail(User user){
+	   Connection con = DatabaseConnection.getConnectivity();
+		String query="insert into edu_detail(userid,program,institute,duration,pyear,marks,cgpa) values(?,?,?,?,?,?,?)";
+		int[] i=new int[0];
+		boolean success=false;
+		try
+		{
+			PreparedStatement ps=con.prepareStatement(query);
+			for(EduDetail edu:user.getEduDetail()){
+				ps.setString(1, edu.getUserid());
+				ps.setString(2, edu.getProgram());
+				ps.setString(3, edu.getInstitute());
+				ps.setString(4, edu.getDuration());
+				ps.setString(5, edu.getPyear());
+				ps.setDouble(6, edu.getMarks());
+				ps.setString(7, edu.getCgpa());
+				ps.addBatch();
+			}
+	        i=ps.executeBatch(); 
+	        if(i.length>0){
+	        	success=true;
+	        }
+		}
+		catch(SQLException ex)
+		{
+			success=false;
+		}	
+		return success;
+   }
 public boolean saveEduDetails3(User user) {
 	Connection con = DatabaseConnection.getConnectivity();
 	String query="insert into edu_detail(userid,program,institute,duration,pyear,marks,cgpa) values(?,?,?,?,?,?,?)";

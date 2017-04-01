@@ -53,6 +53,9 @@ public class UserServiceImpl implements UserService {
 	public boolean saveEduDetails1(User user) {
 		return userDao.saveEduDetails1(user);
 	}
+	public boolean saveTenthDetail(User user){
+		return userDao.saveTenthDetail(user);
+	}
 
 	public boolean saveUserScore(User user, String email, String foi, int score) {
 		return userDao.saveUserScore(user, email, foi, score);
