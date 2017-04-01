@@ -2,6 +2,7 @@ package com.cusat.hackathon.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Set;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cusat.hackathon.model.EduDetail;
 import com.cusat.hackathon.model.PersonalDetail;
 import com.cusat.hackathon.model.User;
 import com.cusat.hackathon.services.UserService;
@@ -39,8 +41,12 @@ public class UserLogin extends HttpServlet {
 		request.setAttribute("user", user);
 		
 		if(null!=user){
+			Set<EduDetail>  edudetails=userService.getEduDetails(user);
 			HttpSession session = request.getSession(true);
+			user.setEduDetail(edudetails);
 			session.setAttribute("user", user);
+			
+			
 			pw.print("SUCCESS");
 			
 		}else{

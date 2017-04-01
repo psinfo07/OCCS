@@ -1,6 +1,9 @@
 package com.cusat.hackathon.services;
 
+import java.util.Set;
+
 import com.cusat.hackathon.dao.UserDao;
+import com.cusat.hackathon.model.EduDetail;
 import com.cusat.hackathon.model.User;
 
 public class UserServiceImpl implements UserService {
@@ -58,4 +61,8 @@ public class UserServiceImpl implements UserService {
 		return userDao.saveContact( name,email,subject,message);
 	
    }
+
+	public Set<EduDetail> getEduDetails(User user) {
+		 return userDao.getEduDetails(user);
+	}
 }

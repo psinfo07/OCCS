@@ -1,5 +1,8 @@
 package com.cusat.hackathon.services;
 
+import java.util.Set;
+
+import com.cusat.hackathon.model.EduDetail;
 import com.cusat.hackathon.model.User;
 
 public interface UserService {
@@ -14,4 +17,5 @@ public interface UserService {
 		public boolean saveEduDetails1(User user);
 		public boolean saveUserScore(User user,String email,String foi,int score);
 		public boolean saveContact(String name, String email,String subject, String message);
+		public Set<EduDetail> getEduDetails(User user);
 }

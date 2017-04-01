@@ -4,6 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import com.cusat.hackathon.dbconn.DatabaseConnection;
 import com.cusat.hackathon.model.Certification;
@@ -593,5 +597,38 @@ public boolean saveContact(String name, String email,String subject, String mess
 	
 	return success;
      }
+
+public Set<EduDetail> getEduDetails(User user) {
+	Connection con = DatabaseConnection.getConnectivity();
+	String query="select program,institute,duration,pyear,marks,cgpa from "
+			+ " edu_detail  where userid=?";
+	Set<EduDetail> eduDetails= new HashSet<EduDetail>();
+	try
+	{
+		PreparedStatement ps=con.prepareStatement(query);
+		ps.setString(1, user.getPersonalDetail().getEmailId());
+		ResultSet rs=ps.executeQuery();
+		while(rs.next()){
+			EduDetail edu= new  EduDetail();
+			edu.setProgram(rs.getString("program"));  
+			edu.setInstitute(rs.getString("institute"));
+			edu.setDuration(rs.getString("duration")); 
+			edu.setPyear(rs.getString("pyear")); 
+			Float marks = Float.parseFloat(rs.getString("marks"));
+			edu.setMarks(marks); 
+			edu.setCgpa(rs.getString("cgpa")); 
+			
+			eduDetails.add(edu);
+		}
+		
+	}
+	catch(SQLException ex)
+	{
+		
+	}
+	
+	return eduDetails;
+}
+
 
 }
