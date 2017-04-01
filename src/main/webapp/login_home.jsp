@@ -51,7 +51,7 @@
 									<!-- <a href="#" class="btn btn-defaylt" role="button" id="questionId" onclick="document.getElementById('test').style.display='block';document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('result').style.display='none';"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></a> -->
 								   
 									<!-- <input type="submit" value="Test" class="btn btn-defaylt fa fa-paper-plane-o fa-5x"> --> 
-									<button type="submit" class="btn btn-defaylt" style="background-color: white"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></button>
+									<button onclick="tenthFormVal()" type="submit" class="btn btn-defaylt" style="background-color: white"><i class="fa fa-paper-plane-o fa-5x" style="color:gray"></i></button>
 								</form>
 								</div>
 								<h4 style=" color:gray"><b>TEST</b></h4>
@@ -79,7 +79,7 @@
 			</div>
 		</div>
 		</div>
-		z
+		
 		<!-- divider -->
 		<!-- <div class="container">
 		<div class="row">
@@ -181,6 +181,12 @@ return false;
 <c:if test="${!empty scoreFoi1}">
    <script>
    document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block';
+   
+   
+	function tenthFormVal()
+	{
+		
+	}
    </script>
     
 </c:if>
