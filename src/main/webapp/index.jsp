@@ -132,22 +132,20 @@ There are no wrong answers to any of the questionnaire.</p>
 						<div class="tab-content">
 							<div class="tab-pane active" id="one">
 								<p><img src="img/career1.jpg" class="pull-left" alt="" />
-									<strong>Augue iriure</strong> dolorum per ex, ne iisque ornatus veritus duo. Ex nobis integre lucilius sit, pri ea falli ludus appareat. Eum quodsi fuisset id, nostro patrioque qui id. Nominati eloquentiam in mea.
+									<strong>Our project</strong> is to develop a system which will provide a better career solution without killing client's time. The goal is to provide better career solution  based on the academic track records, interest , hobbies , personality , IQ ability , weakness , strength , potential earning ability , Myer's - Briggs test , skills etc. and other achievements in extracurricular activities.
 								</p>
-								<p>
-									 No eum sanctus vituperata reformidans, dicant abhorreant ut pro. Duo id enim iisque praesent, amet intellegat per et, solet referrentur eum et.
-								</p>
+								
 							</div>
 							<div class="tab-pane" id="two">
 								<p><img src="img/career2.jpg" class="pull-right" alt="" />
-									 <strong>Tale dolor</strong> mea ex, te enim assum suscipit cum, vix aliquid omittantur in. Duo eu cibo dolorum menandri, nam sumo dicit admodum ei. Ne mazim commune honestatis cum, mentitum phaedrum sit et.
+									 <strong>This project</strong> is helpful for a person in any stage of their life to get a career solution. Whether they are going for the higher education or for a job. It will be a type of professional counseling system developed by our experts for the people who are seeking for career help. This system will help an individual in building their career path by relating their strengths to market reality.
 								</p>
-								<p>Lorem ipsum dolor sit amet, vel laoreet pertinacia at, nam ea ornatus ocurreret gubergren. Per facete graecis eu.</p>
+								
 							</div>
 							<div class="tab-pane" id="three">
-								<p><strong>Lorem ipsum</strong> dolor sit amet, vel laoreet pertinacia at, nam ea ornatus ocurreret gubergren. Per facete graecis eu. </p>
+								<p><strong>The client</strong> will have to SignUp to the system by providing essential basic information about him/her after which the system will generate a unique registration no. </p>
 								<p><img src="img/career3.jpg" class="pull-right" alt="" />
-									 Cu cum commodo regione definiebas. Cum ea eros laboramus, audire deseruisse his at, munere aeterno ut quo. Et ius doming causae philosophia, vitae bonorum intellegat usu cu.
+									 After getting logged in the user can modify his account information like username, password etc. and will provide his details. 
 								</p>
 							</div>
 						</div>
