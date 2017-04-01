@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<jsp:include page="css_part.jsp" />
-<body>
-
-<div id="wrapper">
-	<!-- start header -->
-	<jsp:include page="header_login.jsp" />
-	<!-- end header -->
-	<section id="featured" class="bg">
-	</section>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="row">
-		
+<jsp:include page="header_login.jsp"/>
 <jsp:include page="css_part.jsp"/>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:if test="${empty user}">
@@ -95,7 +79,20 @@
 			</div>
 		</div>
 		</div>
-	
+		z
+		<!-- divider -->
+		<!-- <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		</div> -->
+		
+<!-- <Personal Info Form> -->		
+
+
 	
 	<jsp:include page="personal_details.jsp" />
 		
@@ -110,6 +107,8 @@
 	<jsp:include page="result.jsp"/>
   	
 </section>
+
+<jsp:include page="footer_login.jsp"/>
 
 <script>
 $("#qform1").submit(function(){
@@ -185,75 +184,3 @@ return false;
    </script>
     
 </c:if>
-					
- 
-							</div>
-						</div>
-				</div>	
-			</div>	
-		<!-- divider -->
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="solidline">
-				</div>
-			</div>
-		</div>
-		</div>
-		
-		
-		<!-- divider -->
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="solidline">
-				</div>
-			</div>
-		</div>
-		</div>
-		<!-- end divider -->
-		
-		<!-- clients -->
-		<div class="container">
-				<div class="row">
-								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://www.aicte-india.org/"  target="_blank">
-									<img alt="logo" src="img/clients/1.png" class="img-responsive" />
-									</a>
-								</div>											
-													
-								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://www.i4c.co.in/"  target="_blank">
-									<img alt="logo" src="img/clients/2.png" class="img-responsive" />
-									</a>
-								</div>											
-													
-								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="https://www.persistent.com/"  target="_blank">
-									<img alt="logo" src="img/clients/3.png" class="img-responsive" />
-									</a>
-								</div>											
-													
-								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://www.nic.in/"  target="_blank">
-									<img alt="logo" src="img/clients/4.png" class="img-responsive" />
-									</a>
-								</div>									
-								
-								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="https://www.mygov.in/"  target="_blank">
-									<img alt="logo" src="img/clients/5.png" class="img-responsive" />
-									</a>
-								</div>									
-								<div class="col-xs-6 col-md-2 aligncenter client">
-									<a href="http://mhrd.gov.in/"  target="_blank">
-									<img alt="logo" src="img/clients/6.png" class="img-responsive" />
-									</a>
-								</div>	
-
-				</div>
-		</div>
-				<jsp:include page="footer_login.jsp" />
-				<div class="modal-footer"></div>
-</body>
-</html>

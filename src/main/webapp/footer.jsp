@@ -9,8 +9,8 @@
 					Department of Computer Applications<br>
 					 Cochin University of Science And Technology, Kerala - 682022</address>
 					<p>
-						<i class="icon-phone"></i> +91 8138860415 <br>
-						<i class="icon-envelope-alt"></i>galokg55@gmail.com
+						<i class="icon-phone"></i>Phone - 011-20000198 <br>
+						<i class="icon-envelope-alt"></i>Email - contact@careertherapy.com
 					</p>
 				</div> 
 			</div>

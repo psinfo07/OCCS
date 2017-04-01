@@ -118,7 +118,7 @@
       				<label for="interMarks">Marks Obtained:</label>
       				<input type="text" class="form-control" name="interMarks" maxlength="15" placeholder="Marks Obtainedr">
     			</div>
-    			<<div class="radio-inline">
+    			<div class="radio-inline">
       				<label><input type="radio" name="interCgpa" value="cgpa">CGPA</label>
     			</div>
     			<div class="radio-inline">
