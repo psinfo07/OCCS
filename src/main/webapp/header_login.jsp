@@ -7,7 +7,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<ul class="topleft-info">
-								<li><i class="fa fa-phone"></i> +91 8893304330</li>
+								<li><i class="fa fa-phone"></i> 011-20000198</li>
 							</ul>							
 						</div>																
 						<div class="col-md-5">
@@ -39,7 +39,7 @@
 							
 				
 						<li><a href="login_home.jsp">Home</a></li>							
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="profile.jsp">Profile</a></li>
                         <li><a href="contact_login.jsp">Contact</a></li>
                         <li><a href="about_login.jsp">About</a></li>
                     </ul>    

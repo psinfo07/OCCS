@@ -4,7 +4,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<ul class="topleft-info">
-								<li><i class="fa fa-phone"></i> +91 8893304330</li>
+								<li><i class="fa fa-phone"></i> 011-20000198</li>
 							</ul>							
 						</div>																
 						<div class="col-md-5">

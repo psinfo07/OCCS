@@ -20,20 +20,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-			<b><center><c:out value="${key}" /></center></b>
+			<b> <center> <c:out value="${key}" /> </center> </b>
 	<!-- Slider -->
         <div id="main-slider" class="main-slider flexslider">
             <ul class="slides">
               <li>
-                <img src="img/slides/flexslider/career33.jpg" alt="" />
+                <img src="img/slides/flexslider/3.jpg" alt="" />
                 
               </li>
               <li>
-                <img src="img/slides/flexslider/career22.jpg" alt="" />
+                <img src="img/slides/flexslider/2.jpg" alt="" />
                 
               </li>
               <li>
-              	<img src="img/slides/flexslider/career11.jpg" alt="" />
+              	<img src="img/slides/flexslider/1.jpg" alt="" />
               </li>	
             </ul>
         </div>
