@@ -129,6 +129,7 @@ $("#qform2").submit(function(){
 $.post('sqdform2', $("#qform2").serialize(),
 		function( data ) {
 				if(data=="SUCCESS"){
+			
 					document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='block';document.getElementById('certQualInfo').style.display='none'
 				}else{
 					//$("#failuremsg").text("Invalid UserName/Password !!!");
@@ -165,16 +166,16 @@ return false;
 
 }); 
 
-/* $("#result_id").click(function(){
-	$.post('result_action',
+  $("#tenthform").submit(function(){
+	$.post('tenth_servlet',
 			function( data="SUCCESS" ){debugger;
-			document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block';	
+			document.getElementById('tenthform').style.display='none';	
 			alert(data);
 			
 		});
 		return false;
-	});
-  */
+	}); 
+  
 	
 </script>
 

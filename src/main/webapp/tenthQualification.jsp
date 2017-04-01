@@ -14,7 +14,7 @@
 
 	<div id="tenthQualInfo" class="container" style="display:block;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
-  			<form action="test_servlet" id="qform3">
+  			<form action="tenth_servlet" id="tenthform" method="post">
   				    			    			
     			<div class="form-group">
       				<label for="tenPrograme">Xth Standard:</label>
