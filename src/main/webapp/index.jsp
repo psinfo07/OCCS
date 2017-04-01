@@ -47,24 +47,25 @@
 	<section class="callaction">
 	<div class="container">
 		<div class="row">
-							<div class="col-lg-8">
+							
 								<div class="cta-text">
-									<h2>WHAT <span>CAREER</span> SHOULD I CHOOSE ?</h2>
-									<p><b>* </b>Which career stream should I choose ?</p>
-									<p><b>* </b>What to do after 10th or 12th ?</p>
-									<p><b>* </b>There are so many options which is right for me ?</p>
-									<p><b>* </b>Should I follow my family legacy ?</p>
-									<p><b>* </b>Am I a right fit to pursue science or should I choose commerce or arts ?</p>
-									<p><b>* </b>Do I have what it takes to be ...........?</p>
-									<p><b>* </b>Should I follow the advices of my relatives or friends ?</p>
-									<p><b>* </b>Is ........... the only professions in the world ?</p>
+									<center></center>
+									<center><h2>WHAT <span>CAREER</span> SHOULD I CHOOSE ?</h2></center>
+									<center><p><b>* </b>Which career stream should I choose ?</p></center>
+									<center><p><b>* </b>What to do after 10th or 12th ?</p></center>
+									<center><p><b>* </b>There are so many options which is right for me ?</p></center>
+									<center><p><b>* </b>Should I follow my family legacy ?</p></center>
+									<center><p><b>* </b>Am I a right fit to pursue science or should I choose commerce or arts ?</p></center>
+									<center><p><b>* </b>Do I have what it takes to be ...........?</p></center>
+									<center><p><b>* </b>Should I follow the advices of my relatives or friends ?</p></center>
+									<center><p><b>* </b>Is ........... the only professions in the world ?</p></center>
 								</div>
-							</div>
-							<div class="col-lg-4">
+							
+							<!-- <div class="col-lg-4">
 								<div class="cta-btn">
 									<a href="#" data-toggle="modal" data-target="#signUp" class="btn btn-theme btn-lg">Register Now <i class="fa fa-angle-right"></i></a>
 								</div>
-							</div>	
+							</div>	 -->
 		</div>
 	</div>
 	</section>

@@ -5,7 +5,7 @@
 
 <div id="wrapper">
 	<!-- start header -->
-	<jsp:include page="header.jsp" />
+	<jsp:include page="header_login.jsp" />
 	<!-- end header -->
 	<section id="featured" class="bg">
 	</section>
@@ -14,10 +14,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="row">
-		<center><p><font size="5"><b>Profile</b></font></p></center>
-			<center><p><font size="2"><b>Profile not updated yet...</b></font></p></center>
-			<center><p><font size="2"><b>Please Wait & Connect With us</b></font></p></center>
-
+		
+		<center><p><font size="5"><b>...Profile...</b></font></p></center>
+		<center><p><font size="3"><b>Profile not updated yet</b></font></p></center>
+		<center><p><font size="5"><b>Please wait and connect with us</b></font></p></center>			
+ 
 							</div>
 						</div>
 				</div>	
@@ -246,7 +247,7 @@
 
 				</div>
 		</div>
-				<jsp:include page="footer.jsp" />
+				<jsp:include page="footer_login.jsp" />
 				<div class="modal-footer"></div>
 </body>
 </html>
