@@ -260,6 +260,8 @@
 							<option value="sub18">Civil Services</option>
 							<option value="sub19">Acting</option>
 							<option value="sub20">Fashion Designing</option>
+							<option value="sub27">Science(Math)</option>
+							<option value="sub28">Science(Biology)</option>
 							</select>
 						</div>
 				<div class="form-group">
@@ -286,6 +288,8 @@
 							<option value="sub18">Civil Services</option>
 							<option value="sub19">Acting</option>
 							<option value="sub20">Fashion Designing</option>
+							<option value="sub27">Science(Math)</option>
+							<option value="sub28">Science(Biology)</option>
 							</select>
 						</div>
     			<div class="form-group">
@@ -312,6 +316,8 @@
 							<option value="sub18">Civil Services</option>
 							<option value="sub19">Acting</option>
 							<option value="sub20">Fashion Designing</option>
+							<option value="sub27">Science(Math)</option>
+							<option value="sub28">Science(Biology)</option>
 							</select>
 						</div>
 				<div class="form-group">
@@ -338,6 +344,8 @@
 							<option value="sub18">Civil Services</option>
 							<option value="sub19">Acting</option>
 							<option value="sub20">Fashion Designing</option>
+							<option value="sub27">Science(Math)</option>
+							<option value="sub28">Science(Biology)</option>
 							</select>
 						</div>
     			<button id="certSubmit" type="submit" class="btn btn-default" onclick="document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none'">Submit</button>
