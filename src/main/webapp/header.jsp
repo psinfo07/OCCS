@@ -41,9 +41,30 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li class="dropdown active">
-							<a href="index.jsp" class="dropdown-toggle "  data-delay="0" data-close-others="false">Home</i></a>
+							<a href="index.jsp" class="dropdown-toggle "  data-delay="0" data-close-others="false">Home </i></a>
 						</li>
-                     
+                       <!--  <li class="dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Features <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="components.html">Components</a></li>
+								<li><a href="pricing-box.html">Pricing box</a></li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown">Pages</a>
+									<ul class="dropdown-menu">
+										<li><a href="fullwidth.html">Full width</a></li>
+										<li><a href="right-sidebar.html">Right sidebar</a></li>
+										<li><a href="left-sidebar.html">Left sidebar</a></li>
+										<li><a href="comingsoon.html">Coming soon</a></li>
+										<li><a href="search-result.html">Search result</a></li>
+										<li><a href="404.html">404</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="login.html">Login</a></li>
+									</ul>	
+								</li>
+                            </ul>
+                        </li> -->
+                       <!--  <li><a href="portfolio.html">PROFILE</a></li> -->
                         <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">INSTITUTES <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
                                 <li><a href="https://www.careerguide.com/institutes/engineering-colleges-of-india"  target="_blank">ENGINEERING COLLEGES</a></li>
@@ -73,7 +94,7 @@
 					</h4>
 				</div>
 				<div class="modal-body" style="color:green">          		  
-					<form action="create_user" autocomplete="off" method="post"  id="regForm">
+					<form onsubmit="return regPassVal();" action="create_user" autocomplete="off" method="post"  id="regForm">
 						<div class="form-group">
 							<label for="name">Name:</label>
 							<input type="text" class="form-control" name="name" id="name" maxlength="30" placeholder="Enter Name" required="required">
@@ -113,7 +134,9 @@
 						<label><input type="radio" name="j">JOB     </label>
 					  <label><input type="radio" name="j">        Higher Education</label>
 						</div>
-						<input type="submit" class="btn btn-default" value="Register" /> 
+						<!-- <input type="submit" class="btn btn-default" value="Register" /> --> 
+						<button type="submit" class="btn btn-default" onclick="return regPassVal()">Register</button>
+						<p id="regVal"></p>
 					</form>	  
 				</div>
 				<div class="modal-footer"></div>
@@ -170,7 +193,18 @@ $("#loginForm").submit(function(){debugger;
 	return false;
 	
 });
-</script>
 
+function regPassVal()
+{
+	var pwd = document.getElementById("pwd").value;
+	var cpwd = document.getElementById("cpwd").value;
+	if(pwd!=cpwd)
+	{
+		alert("Password & Confirm password doesn't match");
+		//alert("Code to make AJAX Call");
+		  return false;
+	}
+}
+</script>	
 </header>
 	
