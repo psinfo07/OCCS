@@ -54,5 +54,8 @@ public class UserServiceImpl implements UserService {
 	public boolean saveUserScore(User user, String email, String foi, int score) {
 		return userDao.saveUserScore(user, email, foi, score);
 	}
-
+	public boolean saveContact(String name, String email,String subject, String message){
+		return userDao.saveContact( name,email,subject,message);
+	
+   }
 }

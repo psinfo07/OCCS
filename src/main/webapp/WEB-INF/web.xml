@@ -42,6 +42,10 @@
 		<servlet-name>ResultAction</servlet-name>
 		<url-pattern>/result_action</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ContactUser</servlet-name>
+		<url-pattern>/contact_user</url-pattern>
+	</servlet-mapping>
 	 <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
@@ -133,6 +137,13 @@
   	<display-name>ResultAction</display-name>
   	<servlet-name>ResultAction</servlet-name>
   	<servlet-class>com.cusat.hackathon.servlets.ResultAction</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ContactUser</display-name>
+  	<servlet-name>ContactUser</servlet-name>
+  	<servlet-class>com.cusat.hackathon.servlets.ContactUser</servlet-class>
   </servlet>
   
   <error-page>

@@ -568,5 +568,30 @@ private String getFoi(Connection con, String email,String foi){
 	return scoreOfFoi;
 	
 }
+public boolean saveContact(String name, String email,String subject, String message){
+	Connection con = DatabaseConnection.getConnectivity();
+	String query="insert into contact(name,email,subject,message) values(?,?,?,?)";
+	boolean success=false;
+	int i;
+	try
+	{
+		PreparedStatement ps=con.prepareStatement(query);
+		ps.setString(1, name);
+		ps.setString(2, email);
+		ps.setString(3, subject);
+		ps.setString(4, message);
+        i=ps.executeUpdate(); 
+        if(i>0){
+        	success=true;
+        }
+	}
+	catch(SQLException ex)
+	{
+		success=false;
+	}
+	
+	
+	return success;
+     }
 
 }
