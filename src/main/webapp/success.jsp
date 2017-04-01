@@ -25,7 +25,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-			   
 			    <hr class="colorgraph">
 			    <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
