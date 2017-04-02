@@ -1,18 +1,17 @@
-<jsp:include page="header_login.jsp"/>
+<%-- <jsp:include page="header_login.jsp"/>
 <jsp:include page="css_part.jsp"/>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:if test="${empty user}">
     <c:redirect url="index.jsp"/>
     
 </c:if>
-<section id="content">
-
+ --%>
 		
 		<%-- <!-- <Qualification Info Form> -->
 	<jsp:include page="qualification_details.jsp"/> --%>
 	<!-- <Xth/Other details form> -->
 
-	<div id="tenthQualInfo" class="container" style="display:block;width:40%;border-style:ridge">  		
+	<div id="qualInfo" class="container" style="display:none;width:40%;border-style:ridge">  		
   			<h3>Qualification Details</h3>
   			<form action="tenth_servlet" id="tenthform" method="post">
   				    			    			

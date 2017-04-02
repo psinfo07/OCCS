@@ -96,8 +96,9 @@
 	
 	<jsp:include page="personal_details.jsp" />
 		
-<!-- <Qualification Info Form> -->
-	<jsp:include page="qualification_details.jsp"/>	
+<!-- <=======================Qualification Info Form> -->
+	<%-- <jsp:include page="qualification_details.jsp"/> --%>
+		<jsp:include page="tenthQualification.jsp"/>
 		
   	<!-- <Test/Exam Form> -->
   		<jsp:include page="test_page.jsp"/>
@@ -110,7 +111,29 @@
 
 <jsp:include page="footer_login.jsp"/>
 
-<script>
+<script type="text/javascript" src="allFunctions.js">
+
+$("#tenthQualification").submit(function(){
+	$.post('tenth_servlet', $("tenthQualification").serialize(),
+			function( data ) {
+					if(data=="SUCCESS"){
+						document.getElementById('qualInfo').style.display='none';document.getElementById('gQualInfo').style.display='none';document.getElementById('tenQualInfo').style.display='none';document.getElementById('certQualInfo').style.display='none';
+					}else{
+						//$("#failuremsg").text("Invalid UserName/Password !!!");
+					}
+						
+	});
+	return false;
+
+	}); 
+
+//var num=selFunction();
+/* if(num>0)
+{
+	<jsp:include page="tenthQualification.jsp"/>
+}
+else
+{
 $("#qform1").submit(function(){
 		$.post('sqdform1', $("#qform1").serialize(),
 				function( data ) {
@@ -139,6 +162,7 @@ $.post('sqdform2', $("#qform2").serialize(),
 return false;
 
 });
+}
 $("#qform3").submit(function(){
 $.post('sqdform3', $("#qform3").serialize(),
 		function( data ) {
@@ -165,22 +189,19 @@ $.post('sqdform4', $("#qform4").serialize(),
 return false;
 
 }); 
-</script>
-
-  <!-- <script>
- $("#tenthform").submit(function(){
-	$.post('tenth_servlet',$("#tenthform").serialize(),
-			function( data ) {
-				if(data=="SUCCESS"){
-					document.getElementById('tenthform').style.display='none';	
-					alert(data);
-				}
-			});
+ */
+/* =======================================================$("#result_id").click(function(){
+	$.post('result_action',
+			function( data="SUCCESS" ){debugger;
+			document.getElementById('personalDetails').style.display='none';document.getElementById('qualInfo').style.display='none';document.getElementById('test').style.display='none';document.getElementById('result').style.display='block';	
+			alert(data);
+			
+		});
 		return false;
-	}); 
- 
+	});
+  */
 	
- </script> -->
+</script>
 
 <c:if test="${!empty scoreFoi1}">
    <script>
