@@ -35,12 +35,19 @@ public class ResultAction extends HttpServlet {
 		int scoreFoi1=result.getScoreFoi1();
 		int scoreFoi2=result.getScoreFoi2();
 		int scoreFoi3=result.getScoreFoi3();
-		int scoreFoi4=result.getScoreFoi4(); 		
+		int scoreFoi4=result.getScoreFoi4();
+		int aptitude=(scoreFoi1+scoreFoi2+scoreFoi3+scoreFoi4)/4;
+		
 		
 		request.setAttribute("scoreFoi1", scoreFoi1);
 		request.setAttribute("scoreFoi2", scoreFoi2); 
 		request.setAttribute("scoreFoi3", scoreFoi3); 
-		request.setAttribute("scoreFoi4", scoreFoi4); 
+		request.setAttribute("scoreFoi4", scoreFoi4);
+		
+		request.setAttribute("aptitude",aptitude);
+		
+		request.setAttribute("maxMarks",result.getMaxMarks());
+		request.setAttribute("maxSubject",result.getMaxMarksIn());
 		
 		String lSub1=result.getSub1();
 		String lSub2=result.getSub2();

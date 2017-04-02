@@ -79,7 +79,7 @@ public class TestAction extends HttpServlet {
 	
 	private int getAnswer(Question question, String opt){
 		
-		return question.getAnswer().equals(opt)?1:0;
+		return question.getAnswer().equals(opt)?5:0;
 		
 	}
 

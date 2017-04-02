@@ -51,7 +51,9 @@ public class ResultDao {
 				result.setSub2(fetchSubjectNames(user,"foi2"));
 				result.setSub3(fetchSubjectNames(user,"foi3"));
 				result.setSub4(fetchSubjectNames(user,"foi4"));
-				result.setMaxMarks(fetchSubjectNames(user, str));
+				result.setMaxMarks(String.valueOf(greatest));
+				
+				result.setMaxMarksIn(fetchSubjectNames(user,str));
 				
 			}
 			else

@@ -9,6 +9,22 @@
   					<table class="table">
     					<thead>
       						<tr>        
+        						<th>General Field</th>
+        						<th>Marks</th>   
+      						</tr>
+    					</thead>
+    					<tbody>
+      						<tr>        
+					        	<td>Aptitude Score :</td>
+        						<td><c:out value="${aptitude}" /></td>        
+      						</tr>
+      					</tbody>
+  					</table>
+      			</div>	        
+    			<div class="table-responsive">          
+  					<table class="table">
+    					<thead>
+      						<tr>        
         						<th>Interested Field</th>
         						<th>Marks</th>   
       						</tr>
@@ -29,13 +45,17 @@
       						<tr>        
 					        	<td><c:out value="${lSub4}:" /></td>
         						<td><c:out value="${scoreFoi4}" /></td>        
+      						</tr>
+      						<tr>        
+					        	<td>Field with maximum marks :</td>
+        						<td><b></b><c:out value="${maxMarks}" /></b></td>        
       						</tr>      					
     					</tbody>
   					</table>
   				</div>    			    	
     			<div class="form-group">
-      				<label for="email">Here By According to your test result we will prefer you to go for :<c:out value="${maxMarks}" /> </label>
-      				<label>Some top colleges for you are : <c:out value="${maxMarks}" /> colleges are :</label>
+      				<label for="email">Here By According to your test result we will prefer you to go for :<c:out value="${maxSubject}" /> </label>
+      				<label>Some top colleges for you are :</label>
       				<label><c:out value="${collegeNames}" /></label>      				
     			</div>
     			<!-- <input type="submit" class="btn btn-default"  value="OK" /> -->

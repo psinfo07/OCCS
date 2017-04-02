@@ -5,6 +5,10 @@ import com.sun.jmx.snmp.Timestamp;
 public class Result {
      private String userId;
      private String maxMarks;
+     private String maxMarksIn;
+     /**
+	 * @return the maxMarksIn
+	 */
      private int score;
      private int scoreFoi1;
      private int scoreFoi2;
@@ -15,6 +19,18 @@ public class Result {
      private String sub3;
      private String sub4;
      private String collegeNames;
+     
+     public String getMaxMarksIn() {
+ 		return maxMarksIn;
+ 	}
+
+ 	/**
+ 	 * @param maxMarksIn the maxMarksIn to set
+ 	 */
+ 	public void setMaxMarksIn(String maxMarksIn) {
+ 		this.maxMarksIn = maxMarksIn;
+ 	}
+
 	public String getSub1() {
 		return sub1;
 	}
