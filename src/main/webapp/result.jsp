@@ -34,8 +34,8 @@
   					</table>
   				</div>    			    	
     			<div class="form-group">
-      				<label for="email">So you got max marks one of your interested fields i.e. :<c:out value="${maxMarks}" /> </label>
-      				<label>According to your field of interest <c:out value="${maxMarks}" /> colleges are :</label>
+      				<label for="email">Here By According to your test result we will prefer you to go for :<c:out value="${maxMarks}" /> </label>
+      				<label>Some top colleges for you are : <c:out value="${maxMarks}" /> colleges are :</label>
       				<label><c:out value="${collegeNames}" /></label>      				
     			</div>
     			<!-- <input type="submit" class="btn btn-default"  value="OK" /> -->

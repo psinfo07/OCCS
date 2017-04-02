@@ -17,8 +17,7 @@
 		
 		<center><p><font size="5"><b>...Profile...</b></font></p></center>
 		<center><p><font size="3"><b>Profile not updated yet</b></font></p></center>
-		<center><p><font size="5"><b>Please wait and connect with us</b></font></p></center>			
- 
+		<center><p><font size="5"><b>Please wait and connect with us</b></font></p></center> 			
 							</div>
 						</div>
 				</div>	
