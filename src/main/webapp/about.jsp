@@ -22,22 +22,20 @@
 		
 		<div class="col-md-8 col-md-offset-2">
 			    <hr class="colorgraph">
+			    <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
                 <div id="errormessage"></div>
                 <form action="contact_user" method="post" role="form" class="contactForm"> 
                   
 		
-		<center><font size="4"><p><strong>This software tool is able to counsel based on the academic track records , Interests , hobbies and other 
+		<center><p><font size="4"><strong>This software tool is able to counsel based on the academic track records , Interests , hobbies and other 
 achievements in extra curricular activities. After consolidating all the relevant inputs the software is able to identify. 
 the hidden potential of the candidate and advice accordingly.</strong></p></center>
-		<center><font size="4"><p>For many, a main goal in life is to pursue a career that is meaningful and fulfilling. It can be highly rewarding to be in a role that people are passionate about and that reflects themself  as a person - where they can apply their skills and talents while growing at the same time.</p></center>
+		<center><font size="3.5"><p>For many, a main goal in life is to pursue a career that is meaningful and fulfilling. It can be highly rewarding to be in a role that people are passionate about and that reflects themself  as a person - where they can apply their skills and talents while growing at the same time.</p></center>
 		<center><p>Unfortunately not everyone ends up in such a role, and many people are in jobs that make them feel bored, unmotivated and frustrated. With the average people spending such a significant amount of time at work (over 40 hours per week) not enjoying their  job means for a large proportion of their life they will be both unfulfilled and unhappy.</p></center>
 		<center><p>Resolving their career issues however can be a difficult process. Many people are clueless as to what job would satisfy them and feel stuck in a rut, while some desire change but feel unable to leave their current role. Others may be struggling with a personal issue or problem at work that is preventing them from enjoying their job and performing at their best.</p></center>
 		<center><p>If the clients are one of these people, they could benefit from career help, guidance and support in the form this online career counseling software.</p></center>			
  
-				<div class="col-md-8 col-md-offset-2">
-			    <hr class="colorgraph">
-                <div id="errormessage"></div>
-                <form action="contact_user" method="post" role="form" class="contactForm"> 
+							
 							
 							</div>
 						</div>
